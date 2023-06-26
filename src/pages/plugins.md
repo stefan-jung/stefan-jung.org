@@ -1,7 +1,7 @@
 ---
-title: Get started
-permalink: /get-started/index.html
-description: Websites built with this starter
+title: Plugins
+permalink: /plugins/index.html
+description: Plugins for the DITA-OT
 layout: page
 preloads:
   href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
@@ -9,6 +9,13 @@ preloads:
   type: 'font/woff2'
   crossorigin: true
 ---
+
+| Plugin                       | Description                                                                 |
+|------------------------------|-----------------------------------------------------------------------------|
+| org.stefanjung.release-notes | Generates documentation release notes by reading metadata from DITA topics. |
+
+
+TEST [org.stefanjung.release-notes](/plugins/release-notes)
 
 - **Important:** edit meta data in `src/_data/meta.js`, it's being used all over the template.
 - Have a look at the [blog posts](/blog/), they explain some basic features that aren't covered here.

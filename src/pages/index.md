@@ -1,7 +1,7 @@
 ---
 permalink: /index.html
-title: ' Eleventy Excellent'
-description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flexible layout and progressive enhancement.'
+title: ' Stefan Jung'
+description: 'Personal website, dedicated to technical documentation and information architectures.'
 layout: 'home'
 blog:
   title: 'Blog'

@@ -6,15 +6,6 @@ layout: page
 youtube: true
 ---
 
-Based on the [companion website](https://buildexcellentwebsit.es/) of Andy Bell's talk 'Be the browser’s mentor, not its micromanager'. It takes over a core functionality: Using Tailwind CSS to generate CSS variables based on design tokens.
+**Head of Technical Documentation at Dometic**
 
-Like buildexcellentwebsit.es, this starter uses modern CSS, fluid type & space, flexible Layouts and Progressive Enhancement, wrapped in a basic template, ideal for personal websites and other small projects.
-
-The aim is to spread the idea and use of this _excellent_ workflow. To work with it efficiently you should be familiar with [cube.fyi](https://cube.fyi/), [utopia.fyi](https://utopia.fyi/) and [every-layout.dev](https://every-layout.dev/).
-
-- Find out more on https://buildexcellentwebsit.es/.
-- Remix the original: https://glitch.com/edit/#!/remix/build-excellent-websites
-
-## Watch the talk
-
-{% youtube 'JqnMI1AXl6w', 'Andy Bell – Be the browser’s mentor, not its micromanager' %}
+I am leading a global technical documentation team in a prestigious international company. I am a passionate technical writer with more than 15 years of working experience. Further on, I am a software developer with a strong focus on XML and web technologies. I built OSS tools for DITA on [github.com/stefan-jung](https://github.com/stefan-jung) using [oXygen XML](https://www.oxygenxml.com/). My tools help people to create DITA content in a convient way. 

@@ -5,8 +5,8 @@ module.exports = {
       url: '/about/'
     },
     {
-      text: 'Get started',
-      url: '/get-started/'
+      text: 'Plugins',
+      url: '/plugins/'
     },
     {
       text: 'Built with',
