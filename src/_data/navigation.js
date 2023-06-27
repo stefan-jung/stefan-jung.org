@@ -5,8 +5,8 @@ module.exports = {
       url: '/about/'
     },
     {
-      text: 'DITA Introduction',
-      url: '/dita-introduction/'
+      text: 'DITA Getting Started',
+      url: '/dita-getting-started/'
     },
     {
       text: 'DITA-OT Plugins',
