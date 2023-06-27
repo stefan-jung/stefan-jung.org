@@ -98,3 +98,127 @@ XSLT
 
 *   [data2type XSLT tutorials](https://www.data2type.de/en/xml-xslt-xslfo/xslt/)
 *   [w3schools XSLT tutorials](https://www.w3schools.com/xml/xsl_intro.asp)
+
+
+DITA Communities
+----------------
+
+*   [DITA Awareness Group (Linkedin)](https://www.linkedin.com/groups/162465) - DITA community on Linkedin.
+*   [DITA Group (Xing)](https://www.xing.com/communities/groups/darwin-information-typing-architecture-dita-ba2f-1012092) - DITA community on Xing.
+*   [DITA For Publishers](http://www.dita4publishers.org/) - The general goal of the DITA for Publishers project is to make creating and using DITA-based solutions for Publishing-specific business challenges as quick and easy as possible by providing a solid base from which you can start immediately.
+*   [DITA-Community](http://www.dita-community.org/) - The DITA-Community is a place for DITA-OT plugins and sample files.
+*   [DITANAUTS](http://ditanauts.org/) - The goal of the DITANAUTS project is to provide relevant, actionable information that helps others with the implementation of DITA.
+*   [DITA Chicks](https://ditachicks.wordpress.com/) - DITA Chicks is a blog of Karen Lowe and Lu Hall covering various DITA related topics.
+    
+*   [oXygen XML DITA Forum](https://www.oxygenxml.com/forum/forum20.html) - The DITA forum of the oXygen XML editor is an important information resource and has great supporters and moderators.
+
+
+Mailing Lists
+-------------
+
+*   [dita-users (Yahoo)](https://groups.yahoo.com/group/dita-users) - Biggest DITA mailing list
+*   [oxygen-users](https://www.oxygenxml.com/mailinglists.html#oxygen-user) - Mailing list of the oXygen XML editor
+*   [dita-ot-users (Google)](https://groups.google.com/forum/#!forum/dita-ot-users) - Another DITA mailing list, focussed on the DITA-OT.
+
+
+Here we present tools, that can be used to create, edit and process DITA files.
+
+#### Editors
+
+*   [oXygen XML](http://oxygenxml.com) (Commercial) - The leading DITA XML editor.
+*   [FrameMaker](http://www.adobe.com/de/products/framemaker.html) (Commercial) - DITA XML editor with powerful desktop publishing features.
+*   [Xopus](http://www.sdl.com/solution/knowledge-delivery/xml-publishing-xopus/) (Commercial) - Web-based DITA XML editor
+*   [Xeditor](http://www.xeditor.com/portal) (Commercial) - Web-based DITA XML editor
+*   [XMetaL Author](http://xmetal.com/content-xmetal-author/) (Commercial) - XML editor
+*   [XMLMind](http://www.xmlmind.com/xmleditor/download.shtml) (free for personal use) - Commercial XML editor, uses own DITA processing engine (not DITA-OT)
+*   [Arbortext Editor](http://www.ptc.com/service-lifecycle-management/arbortext/editor) (Commercial) - XML editor
+*   [Atom](https://atom.io/) (Open Source - [MIT](https://opensource.org/licenses/MIT)) - Modern, customizable text editor, can be customized to work as a basic XML editor
+*   [FontoXML](https://dita.fontoxml.com/editor) (Commercial) - Modern, web-based XML editor.
+    
+    [You can use FontoXML for free](http://dita.fontoxml.com/), when using it with Google Drive or Microsoft OneDrive. It is also possible to setup a Git repository and keep that in your Google Drive or Microsoft OneDrive to collaborate with others.
+    
+*   [Codex](http://www.codex.ca/index.html) (Free for commercial and non-commercial use) - Simple DITA editor
+*   Eclipse (Open Source - EPL) - Can be enhanced to be used as a DITA editor, see [Adding DITA to Eclipse](http://blog.artifact-software.com/tech/?p=220) by Ron Wheeler
+*   [jEdit](http://www.jedit.org/) (Open Source - GPL2) - Customizable text editor. Install the XML plugin and then add the catalog-dita.xml in the plugin settings to make DITA validation work.
+
+  
+
+#### Content Management Systems
+
+*   [Astoria CMS](http://www.astoriasoftware.com/) (Commercial)
+*   [CloudDrafts](http://www.webworks.com/Products/CloudDrafts/) (Commercial)
+*   [Componize DITA CMS](http://www.componize.com/) (Commercial)
+*   [DITA Exchange DX4](http://www.ditaexchange.com/) (Commercial)
+*   [DITAToo CMS](http://www.intuillion.com/) (Commercial)
+*   [DITAworks](http://ditaworks.com/) (Commercial)
+*   [DocZone DITA CCMS](http://www.rsicms.com/doczone) (Commercial)
+*   [easyDITA](http://easydita.com/) (Commercial)
+*   [Empolis Smart Content Express](http://empolis.com/microsites/content-express/en/) (Commercial)
+*   [IXIASOFT DITA CMS](http://www.ixiasoft.com/en/products/) (Commercial)
+*   [RSI Content Solutions RSuite](http://www.rsicms.com/rsuite-enterprise-publishing-solution) (Commercial)
+*   [SDL Knowledge Center](http://www.sdl.com/cxc/knowledge-delivery/documentation-management-dita/) (Commercial)
+*   [Vasont DITA CMS](https://www.vasont.com/) (Commercial)
+*   [XDocs CCMS](http://www.bluestream.com) (Commercial)
+*   [XML Documentation Add-on for Adobe Experience Manager](http://www.adobe.com/products/xml-documentation-add-on-for-experience-manager.html) (Commercial)
+*   [XPLM Publisher](http://www.xplm.com/publisher) (Commercial)
+
+  
+
+#### Controlled Version Systems
+
+*   [oxygen-git-plugin](https://github.com/oxygenxml/Oxygen-Git-Plugin) (Open Source - [APL2](https://www.apache.org/licenses/LICENSE-2.0)) - oXygen XML plugin that provides a simple Git client
+
+  
+
+#### Conversion
+
+*   [Migrate](http://www.stilo.com/products/conversion/) (Commercial) - Cloud service with automatic conversion of various formats, e.g. FrameMaker or Word to DITA.
+*   [oxygen-resources-convertor](https://github.com/oxygenxml/oxygen-resources-convertor) (Open Source - [APL2](https://www.apache.org/licenses/LICENSE-2.0)) - oXygen XML plugin to convert resources from various formats (e.g. HTML, Markdown) to DITA  
+    
+
+  
+
+#### Comparison
+
+*   [DeltaXML](https://www.deltaxml.com/) (Commercial) - Tool to compare and merge DITA
+
+  
+
+#### Translation
+
+*   [Fluenta DITA Translation Manager](http://www.maxprograms.com/products/fluenta.html) (Commercial) - Tool to convert DITA to XLIFF for sending it to a translator. Contains a small translation management system.
+*   [Translation-Package-Builder](https://github.com/oxygenxml/Translation-Package-Builder) (Open Source - [APL2](https://www.apache.org/licenses/LICENSE-2.0)) - oXygen XML plugin to generate translation packages from DITA
+
+  
+
+#### Online Platforms and Publishing Solutions
+
+*   [4Dpubs](https://github.com/turbonomic/4Dpubs) (Open Source - [MIT](https://opensource.org/licenses/MIT)) - Renders DITA directly in the browser with XSLT.
+*   [DITAweb](http://congility.com/ditaweb) (Commercial)
+*   [ePublisher](http://www.webworks.com/Products/ePublisher/) (Commercial)
+*   [Fluid Topics](http://www.fluidtopics.com) (Commercial) - Online Platform for hosting DITA content.
+*   [oXygen XML WebHelp](https://www.oxygenxml.com/xml_webhelp.html) (Commercial)
+*   [SuiteHelp](http://suite-sol.com/products/suitehelp/) (Commercial)
+*   [Zoomin Docs](http://www.zoominsoftware.com/) (Commercial) - Portal for documentation and knowledge bases.
+
+  
+
+#### Print Solutions
+
+*   [DITA InPrint™](http://www.ditainprint.com) (Commercial)
+*   [IdXML – DITA to Adobe InDesign](http://congility.com/idxml/) (Commercial)
+*   [MiramoPDF](http://www.miramo.com/download/documentation/Miramo_DITA-OT_Readme.pdf) (Commercial)
+*   [TopLeaf XML Publisher](http://www.topleaf.com.au) (Commercial)
+
+  
+
+#### Metadata/Search
+
+*   [oxygen-dita-prolog-updater](https://github.com/oxygenxml/oxygen-dita-prolog-updater) (Open Source - [APL2](https://www.apache.org/licenses/LICENSE-2.0)) - oXygen XML plugin to update metadata information in topics and maps
+*   [ditasearch](https://github.com/shaneataylor/ditasearch) - DITA-OT plugin to build a search index and search box for HTML5 output
+
+  
+
+#### Analytics/Metrics
+
+*   [dita-metrics-report](https://github.com/oxygenxml/dita-metrics-report) (Open Source - [MPL2](https://www.mozilla.org/en-US/MPL/2.0/)) - DITA-OT plugin that creates metrics reports from DITA projects
