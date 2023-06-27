@@ -6,7 +6,7 @@ module.exports = {
     },
     {
       text: 'DITA Introduction',
-      url: 'https://doctales.github.io/dita-introduction/website/index.html'
+      url: '/dita-introduction/'
     },
     {
       text: 'DITA-OT Plugins',
