@@ -10,8 +10,9 @@ preloads:
   crossorigin: true
 ---
 
-| Plugin                                          | Description                                                                                        |
-|-------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Plugin                                    | Description                                                                                        |
+|-------------------------------------------|----------------------------------------------------------------------------------------------------|
+| [org.jung.graalvm](./graal)               | Provides the Graal VM for processing JavaScript with Apache Ant.                                   |
 | [org.jung.release-notes](./release-notes) | Generates documentation release notes by reading metadata from DITA topics.                        |
 | [org.jung.reveal](./reveal)               | Generates [reveal.js](https://revealjs.com/) based preasentations from DITA.                       |
 | [org.jung.schematron](./schematron)       | Integrates [Schematron](https://www.schematron.com/) into the [DITA-OT](https://www.dita-ot.org/). |
