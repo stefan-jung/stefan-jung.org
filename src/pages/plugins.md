@@ -12,7 +12,7 @@ preloads:
 
 | Plugin                                          | Description                                                                                        |
 |-------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| [org.stefanjung.release-notes](./release-notes) | Generates documentation release notes by reading metadata from DITA topics.                        |
-| [org.stefanjung.reveal](./reveal)               | Generates [reveal.js](https://revealjs.com/) based preasentations from DITA.                       |
-| [org.stefanjung.schematron](./schematron)       | Integrates [Schematron](https://www.schematron.com/) into the [DITA-OT](https://www.dita-ot.org/). |
-| [org.stefanjung.terminology](./terminology)     | For managing terminology in a DITA environment.                                                    |
+| [org.jung.release-notes](./release-notes) | Generates documentation release notes by reading metadata from DITA topics.                        |
+| [org.jung.reveal](./reveal)               | Generates [reveal.js](https://revealjs.com/) based preasentations from DITA.                       |
+| [org.jung.schematron](./schematron)       | Integrates [Schematron](https://www.schematron.com/) into the [DITA-OT](https://www.dita-ot.org/). |
+| [org.jung.terminology](./terminology)     | For managing terminology in a DITA environment.                                                    |
