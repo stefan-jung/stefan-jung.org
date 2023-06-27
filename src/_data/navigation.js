@@ -5,16 +5,16 @@ module.exports = {
       url: '/about/'
     },
     {
-      text: 'Plugins',
+      text: 'DITA Introduction',
+      url: '/dita-introduction/'
+    },
+    {
+      text: 'DITA-OT Plugins',
       url: '/plugins/'
     },
     {
-      text: 'Built with',
-      url: '/built-with/'
-    },
-    {
-      text: 'Blog',
-      url: '/blog/'
+      text: 'Consulting',
+      url: '/consulting/'
     }
   ],
   bottom: [

@@ -10,6 +10,11 @@
     "icon": "linkedin.svg"
   },
   {
+    "platform": "twitter",
+    "url": "https://twitter.com/stefanjung85",
+    "icon": "twitter.svg"
+  },
+  {
     "platform": "rss",
     "url": "/feed.xml",
     "icon": "rss.svg"

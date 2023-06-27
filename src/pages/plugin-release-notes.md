@@ -1,5 +1,5 @@
 ---
-title: Plugins
+title: Release-notes plugin
 permalink: /plugins/release-notes.html
 description: Plugin for generating release notes of DITA docs
 layout: page

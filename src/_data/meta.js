@@ -31,14 +31,15 @@ module.exports = {
   },
   address: {
     // edit all presets or leave empty. They are being used in the pages for privacy.md and imprint.md
-    firma: 'Organization name',
-    street: '123 Main St.',
-    city: 'Ciudad',
-    state: 'Estado',
-    zip: '12345',
-    mobileDisplay: '+34 1234567',
-    mobileCall: ' +341234567',
-    email: 'hola@yoursite.com',
+    firma: 'Stefan Jung Consulting',
+    street: 'Philipp-Manz-Straße 54',
+    city: 'Greven',
+    state: 'North Rhine Westphalia',
+    country: 'Germany',
+    zip: '48268',
+    mobileDisplay: '+49 163 7431585',
+    mobileCall: ' +491637431585',
+    email: 'stefan.jung@mailbox.org',
     cif: ''
   },
   menu: {
