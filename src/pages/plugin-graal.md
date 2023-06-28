@@ -11,4 +11,4 @@ preloads:
 ---
 
 
-[org.jung.graalvm](https://github.com/stefan-jung/org.jung.graalvm) is a plugin for the [DITA-OT](https://www.dita-ot.org/) and is providing the Graal VM for executing JavaScript from Apache Ant builds.
+[org.jung.graal](https://github.com/stefan-jung/org.jung.graal) is a plugin for the [DITA-OT](https://www.dita-ot.org/) and is providing the Graal VM for executing JavaScript from Apache Ant builds.
