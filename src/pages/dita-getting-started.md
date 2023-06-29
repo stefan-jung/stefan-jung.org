@@ -7,11 +7,13 @@ permalink: /dita-getting-started/index.html
 
 This section helps you to get started with DITA if you are completely new to DITA.  
 
-  
+Work through the comprehensive [dita-introduction](https://stefanjung.netlify.app/dita-introduction/).
+
+Resources for learning DITA: [DITA resources](/dita-resources/index.html)
+
 
 * * *
 
-*   [Tutorials](#GettingStartedwithDITA-Tutorials)
 *   [DITA XML Specification](#GettingStartedwithDITA-DITAXMLSpecification)
 *   [Development/Specialization](#GettingStartedwithDITA-Development/Specialization)
 *   [Blogs](#GettingStartedwithDITA-Blogs)
@@ -26,13 +28,6 @@ This section helps you to get started with DITA if you are completely new to DIT
 * * *
 
   
-
-Tutorials
----------
-
-*   [LearningDITA](http://learningdita.com/) - E-learning for individuals who want to explore DITA
-*   [DITA Wiki Knowledgebase on dita.xml.org](http://dita.xml.org/book/dita-wiki-knowledgebase)
-
 DITA XML Specification
 ----------------------
 
@@ -45,17 +40,6 @@ Development/Specialization
 *   [data2type - DITA Spezialisierung](https://www.data2type.de/xml-xslt-xslfo/dita/spezialisierung/) (German) - DITA specialization tutorials by the german company data2type
 *   [Xiruss - DITA Specialization Tutorials](http://www.xiruss.org/tutorials/dita-specialization/) - DITA specialization tutorials by E. Kimber  
     
-
-Blogs
------
-
-*   [Think DITA](http://think-dita.com/) - Blog of Magda Caloian about DITA and information architecture
-*   [Scriptorium](http://www.scriptorium.com/blog/) - Blog of the publishing and content strategy consulting company Scriptorium.
-*   [Dr. Macro's XML Rants](http://drmacros-xml-rants.blogspot.de/) - DITA blog written by Eliot Kimber
-*   [I'd Rather Be Writing](http://idratherbewriting.com/) - Information architecture and API documentation blog written by Tom Johnson.
-*   [oXygen XML Blog](http://blog.oxygenxml.com/) - Official blog of the oXygen XML editor.
-*   [Andreas Petersell DITA-XML Blog](http://www.petersell.com/tag/ditaxml) - DITA blog written by Andreas Petersell.
-*   [blog.artifact-software.com](http://blog.artifact-software.com/tech/?tag=dita) - Blog written by Ron Wheeler
 
 DITA-Transformations
 --------------------

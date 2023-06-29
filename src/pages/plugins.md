@@ -13,7 +13,8 @@ preloads:
   crossorigin: true
 ---
 
-{{ collections.all | eleventyNavigation | eleventyNavigationToMarkdown | safe }}
+<!-- {{ collections.all | eleventyNavigation | eleventyNavigationToMarkdown | safe }} -->
+
 
 | Plugin                                                | Description                                                                                        |
 |-------------------------------------------------------|----------------------------------------------------------------------------------------------------|
