@@ -3,6 +3,10 @@ title: Release-notes plugin
 permalink: /plugins/release-notes.html
 description: Plugin for generating release notes of DITA docs
 layout: page
+eleventyNavigation:
+  key: plugin-release-notes
+  parent: plugins
+  title: Release Notes plugin
 preloads:
   href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
   as: 'font'

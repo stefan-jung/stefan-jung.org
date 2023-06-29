@@ -3,6 +3,10 @@ title: Java Properties 2 DITA plugin
 permalink: /plugins/javaproperties2dita.html
 description: Plugin for converting Java properties to DITA
 layout: page
+eleventyNavigation:
+  key: plugin-javaProperties2dita
+  parent: plugins
+  title: Java Properties 2 DITA plugin
 preloads:
   href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
   as: 'font'

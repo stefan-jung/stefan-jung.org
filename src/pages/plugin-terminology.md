@@ -3,6 +3,10 @@ title: Terminology plugin
 permalink: /plugins/terminology.html
 description: Plugin for managing terminology with DITA
 layout: page
+eleventyNavigation:
+  key: plugin-terminology
+  parent: plugins
+  title: Terminology plugin
 preloads:
   href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
   as: 'font'

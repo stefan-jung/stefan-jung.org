@@ -3,6 +3,10 @@ title: Reveal plugin
 permalink: /plugins/reveal.html
 description: Plugin creating reveal.js based presentations
 layout: page
+eleventyNavigation:
+  key: plugin-reveal
+  parent: plugins
+  title: Reveal.js plugin
 preloads:
   href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
   as: 'font'

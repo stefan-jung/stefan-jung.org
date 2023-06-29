@@ -3,6 +3,10 @@ title: Ant Contrib plugin
 permalink: /plugins/ant-contrib.html
 description: Plugin providing the ant-contrib library for Apache Ant.
 layout: page
+eleventyNavigation:
+  key: plugin-ant-contrib
+  parent: plugins
+  title: Ant Contrib plugin
 preloads:
   href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
   as: 'font'

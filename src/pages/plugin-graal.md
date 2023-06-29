@@ -3,6 +3,10 @@ title: Graal VM plugin
 permalink: /plugins/graalvm.html
 description: Plugin for using JavaScript with Apache Ant using the Graal VM.
 layout: page
+eleventyNavigation:
+  key: plugin-graal
+  parent: plugins
+  title: Graal VM plugin
 preloads:
   href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
   as: 'font'

@@ -3,6 +3,10 @@ title: Schematron plugin
 permalink: /plugins/schematron.html
 description: Plugin for using Schematron with the DITA-OT
 layout: page
+eleventyNavigation:
+  key: plugin-schematron
+  parent: plugins
+  title: Schematron plugin
 preloads:
   href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
   as: 'font'

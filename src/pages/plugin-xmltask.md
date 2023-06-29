@@ -3,6 +3,11 @@ title: XML Task plugin
 permalink: /plugins/xmltask.html
 description: Plugin for using the OOPS consultancy XML Task with Apache Ant.
 layout: page
+eleventyNavigation:
+  key: plugin-xmltask
+  parent: plugins
+  title: OOPS Consultancy xmltask plugin
+  excerpt: --- excerpt
 preloads:
   href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
   as: 'font'
