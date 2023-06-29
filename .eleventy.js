@@ -129,6 +129,9 @@ module.exports = eleventyConfig => {
     'src/assets/images/favicon/*': '/'
   });
 
+  // Copy the entire dita-introduction website
+  eleventyConfig.addPassthroughCopy('src/dita-introduction/');
+
   // 	--------------------- general config -----------------------
   return {
     // Pre-process *.md, *.html and global data files files with: (default: `liquid`)

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="topic_gml_rsg_tz" path="topics/dita-introduction.html"/>
+   <appContext helpID="what-is-xml" path="topics/what-is-xml.html"/>
+   <appContext helpID="what-is-dita" path="topics/what-is-dita.html"/>
+   <appContext helpID="dita-history" path="topics/dita-history.html"/>
+   <appContext helpID="simple-project-hierarchy"
+               path="topics/simple-project-hierarchy.html"/>
+   <appContext helpID="topic_ehm_1py_sz" path="topics/why-dita.html"/>
+   <appContext helpID="topic_xwx_gqz_sz" path="topics/who-is-using-dita.html"/>
+   <appContext helpID="topic_tbk_jqz_sz" path="topics/sap-dita-figures.html"/>
+   <appContext helpID="topic_vkm_nqz_sz" path="topics/dita-ot.html"/>
+   <appContext helpID="topic_r41_22b_tz" path="topics/key-features.html"/>
+   <appContext helpID="conref" path="topics/conref.html"/>
+   <appContext helpID="keyref" path="topics/keyref.html"/>
+   <appContext helpID="conkeyref" path="topics/conkeyref.html"/>
+   <appContext helpID="conrefend" path="topics/conrefend.html"/>
+   <appContext helpID="reltable" path="topics/reltable.html"/>
+   <appContext helpID="conrefpush" path="topics/conrefpush.html"/>
+   <appContext helpID="ditaval" path="topics/ditaval.html"/>
+   <appContext helpID="subjectscheme" path="topics/subjectScheme.html"/>
+   <appContext helpID="key-scopes" path="topics/key-scopes.html"/>
+   <appContext helpID="topic_plq_gnk_pz" path="topics/pros-and-cons.html"/>
+   <appContext helpID="keyref" path="topics/keyref.html"/>
+   <appContext helpID="conref" path="topics/conref.html"/>
+   <appContext helpID="conkeyref" path="topics/conkeyref.html"/>
+   <appContext helpID="conrefend" path="topics/conrefend.html"/>
+   <appContext helpID="conrefpush" path="topics/conrefpush.html"/>
+</map>
