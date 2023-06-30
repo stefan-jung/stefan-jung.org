@@ -14,9 +14,7 @@ preloads:
   crossorigin: true
 ---
 
-[![DITA-OT 3.x](https://img.shields.io/badge/DITA--OT-3.x-green.svg)](http://www.dita-ot.org) 
-[![DITA-OT 4.x](https://img.shields.io/badge/DITA--OT-4.x-green.svg)](http://www.dita-ot.org)
-[![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+![DITA-OT 3.x](https://img.shields.io/badge/DITA--OT-3.x-green.svg) ![DITA-OT 4.x](https://img.shields.io/badge/DITA--OT-4.x-green.svg) ![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
 
 [org.jung.reveal](https://github.com/stefan-jung/org.jung.reveal) is a DITA-OT plugin for generating HTML web slides based on the HTML presentation framework [reveal.js](http://lab.hakim.se/reveal-js/#/). This page should contain everything to get you started. To adapt the presentation to your needs, use the parameters explained below. If you have found a bug or want to request a feature, please raise an [issue](https://github.com/stefan-jung/org.jung.reveal/issues).
 
