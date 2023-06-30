@@ -20,17 +20,14 @@ preloads:
 Installing the Plugin
 =====================
 
-1.  Move to the `~/bin` directory of the DITA-OT.
-2.  Install the plugin using the dita command.
+Install the plugin using the `dita` command.
     
-    ```xml
-    dita --install https://github.com/stefan-jung/org.jung.reveal/archive/master.zip
-    ```
+```bash
+dita --install https://github.com/stefan-jung/org.jung.reveal/archive/master.zip
+```
     
-    > **INFO**: The `reveal.js` framework ist not shipped by the plugin. It is automatically downloaded and extracted when publishing the first presentation.
-    
+> **INFO**: The `reveal.js` framework ist not shipped by the plugin. It is automatically downloaded and extracted when publishing the first presentation.
 
-  
 
 Publishing the Sample Presentation
 ==================================
@@ -59,9 +56,6 @@ Creating a presentation is easy. A DITA topic represents a single slide and the 
     <topicref href="topics/02_DOCTALES.dita"/>
 </map>
 ```
-
-  
-
   
 The map contains references two to topics, each representing a top-level slide. The first topic contains the title and the logo.
 
@@ -175,7 +169,6 @@ Parameters
 | `args.reveal.width`                    | Default: 960                                                                                          | The 'normal' width of the presentation, aspect ratio will be preserved when the presentation is scaled to fit different resolutions. Can be specified using percentage units.  |
 
 
-
 Implement Font Awesome
 ======================
 
@@ -205,7 +198,6 @@ You can easily implement Font Awesome to use fancy icons in your presentation.
       font-style: normal;
     }
     ```
-    
 
 You can now add icons to your DITA content.
 
@@ -235,7 +227,4 @@ Reveal.js uses `@class` to enable certain functionality. Use `@outputclass` in
 </section>
 ```
 
-  
-
 To add [speaker notes](https://github.com/hakimel/reveal.js#speaker-notes), you have two options in your DITA files. In any DITA topic type you can use `<div outputclass="notes">`. In the DOCTALES Slide topic type, you can also use the `<speakernotes>` element.
-
