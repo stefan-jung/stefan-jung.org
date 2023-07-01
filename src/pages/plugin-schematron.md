@@ -7,12 +7,18 @@ eleventyNavigation:
   key: plugin-schematron
   parent: plugins
   title: Schematron plugin
+  excerpt: DITA-OT plugin for validating DITA-XML files with Schematron
 preloads:
   href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
   as: 'font'
   type: 'font/woff2'
   crossorigin: true
 ---
+
+{% set crumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+{% for crumb in crumbs %}
+Parent: <a class="crumb" href="{{ crumb.url | url }}">{{ crumb.title }}</a>
+{% endfor %}
 
 [org.doctales.schematron](https://github.com/doctales/org.doctales.schematron) is a DITA-OT plugin for validating DITA-XML files with Schematron. This plugins is based on [ph-schematron](https://github.com/phax/ph-schematron).
 

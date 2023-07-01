@@ -7,12 +7,18 @@ eleventyNavigation:
   key: plugin-release-notes
   parent: plugins
   title: Release Notes plugin
+  excerpt: DITA-OT plugin for generating release-notes from DITA topics
 preloads:
   href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
   as: 'font'
   type: 'font/woff2'
   crossorigin: true
 ---
+
+{% set crumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+{% for crumb in crumbs %}
+Parent: <a class="crumb" href="{{ crumb.url | url }}">{{ crumb.title }}</a>
+{% endfor %}
 
 [org.doctales.release-notes](https://github.com/doctales/org.doctales.release-notes) is a plugin for the [DITA-OT](http://dita-ot.github.io/) that extends the **org.dita.pdf2** plugin to automatically create release-notes lists or tables from the [DITA 1.3 release-management domain elements](http://docs.oasis-open.org/dita/dita/v1.3/os/part3-all-inclusive/archSpec/technicalContent/releaseManagement-domain.html#dita_release_management_domain_topic). If you have a question, go to the [questions](https://doctales.atlassian.net/wiki/display/J2D/questions/onboarding) section and ask the DOCTALES team. If you have found a bug or want to request a feature, please raise an [issue](https://github.com/doctales/org.doctales.javaProperties2Dita/issues).
 

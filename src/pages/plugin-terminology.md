@@ -7,6 +7,7 @@ eleventyNavigation:
   key: plugin-terminology
   parent: plugins
   title: Terminology plugin
+  excerpt: DITA-OT plugin for creating a DITA-based terminology database
 preloads:
   href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
   as: 'font'
@@ -14,6 +15,10 @@ preloads:
   crossorigin: true
 ---
 
+{% set crumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+{% for crumb in crumbs %}
+Parent: <a class="crumb" href="{{ crumb.url | url }}">{{ crumb.title }}</a>
+{% endfor %}
 
 [org.doctales.terminology](https://github.com/doctales/org.doctales.terminology) is a plugin for the [DITA-OT](http://dita-ot.github.io/) for creating a DITA-based terminology database. This site should help you to get started. If you have a question, go to the [questions](https://doctales.atlassian.net/wiki/display/TERM/questions/all) section and ask the DOCTALES team or join our [#terminology](https://doctales.slack.com/) Slack channel. If you have found a bug or want to request a feature, please raise an [issue](https://github.com/doctales/org.doctales.terminology/issues).
 
