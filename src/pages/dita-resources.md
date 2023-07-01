@@ -3,9 +3,6 @@ title: DITA Resources
 permalink: /dita-resources/index.html
 description: DITA learning resources
 layout: page
-eleventyNavigation:
-  key: dita-resources
-  title: DITA Resources
 preloads:
   href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
   as: 'font'
