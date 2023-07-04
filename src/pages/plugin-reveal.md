@@ -49,7 +49,7 @@ Publishing the Sample Presentation
 Presentation Structure
 ======================
 
-Creating a presentation is easy. A DITA topic represents a single slide and the DITA Map holds all topics/slides together. Take a look at the ` Doctales.ditamap` in your `presentation` directory. 
+Creating a presentation is easy. A DITA topic represents a single slide and the DITA Map holds all topics/slides together. Take a look at the `Doctales.ditamap` in your `presentation` directory. 
 
 **doctales.ditamap**
 
