@@ -5,17 +5,48 @@ layout: page
 permalink: /dita-getting-started/index.html
 ---
 
-This section helps you to get started with DITA if you are completely new to DITA.  
+This section helps you to get started with DITA if you are completely new to DITA. One of the disadvantages of DITA is, that the releveant information is quite fragmented and cluttered over various websites. Let this page be your compass guiding you through what's really relevant for you.
 
-Work through the comprehensive [dita-introduction](https://stefanjung.netlify.app/dita-introduction/).
 
-Resources for learning DITA: [DITA resources](/dita-resources/index.html)
+## Core concepts
+
+Maybe you are at the very beginning right now and would like to ensure that DITA is really the right technology for you to learn. In this case, you maybe want to work through the quite comprehensive [dita-introduction](https://stefanjung.netlify.app/dita-introduction/), which I have created for you. It explains the basics of XML, DITA, the DITA history, and the unique functions which make DITA so powerful.
+
+You can also find a recording of a presentation of this DITA introduction on Youtube:
+
+**Write the Docs: Stefan Eike - DITA Introduction**
+[![Write the Docs - Stefan Eike - DITA Introduction](http://img.youtube.com/vi/yxRv5n9w0I4/0.jpg)](http://www.youtube.com/watch?v=yxRv5n9w0I4 "Stefan Eike - DITA Introduction")
+
+
+## Learning DITA
+
+If you are now sure that DITA is the right technology for you to learn, you should work through [LearningDITA](http://learningdita.com/). This is a comprehensive, well-designed and free e-learning, which has been crafted by [Scriptorium](https://www.scriptorium.com).
+
+This will give you a good base. You should also give read some parts of the [DITA 1.3 Specification](http://docs.oasis-open.org/dita/dita/v1.3/os/part3-all-inclusive/dita-v1.3-os-part3-all-inclusive.html). This may sound a bit strange, but the specification actually contains many useful examples that will help you.
+
+
+## Specializing DITA
+
+DITA ships a couple of specialized topic types, which are specialized from the core **[&lt;topic>](http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/archSpec/base/generictopics.html)** topic:
+
+* [Concept topic](http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/archSpec/technicalContent/dita-concept-topic.html)
+* [Reference topic](http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/archSpec/technicalContent/dita-reference-topic.html)
+* [General task topic](http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/archSpec/technicalContent/dita-generic-task-topic.html)
+* [(Strict) task topic](http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/archSpec/technicalContent/dita-task-topic.html)
+* [Machinery task topic](http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/archSpec/technicalContent/dita-machinerytask-topic.html#dita_spec_2_1_info_tasks)
+* [Troubleshooting topic](http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/archSpec/technicalContent/dita-troubleshooting-topic.html)
+* [Glossary entry topic](http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/archSpec/technicalContent/dita-glossary-topic.html)
+* [Glossary group topic](http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/archSpec/technicalContent/dita-glossarygroup-topic.html)
+
+*Specialization* helps you to add or remove XML elements and attributes or restrict their usage. By default, the DITA topics contains hundreds of elements, and probably you only need a subset. Let's assume that you don't need dedicated XML elements for explaining a software (because you create physical products). All DITA XML elements for explaining software are grouped in the *[Software](http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/langRef/containers/sw-d.html)* domain. If you want to remove the entire domain and all its elements, you need to specialize new topic types (e.g. extending the concept and task topics). The concept of *specialization* is for sure the unique selling point of DITA. It allows you to create company-specific DITA grammars which are still fully compatible to the DITA specification.
+
+> **Info**: Maybe you don't want to work with all these semantic XML elements. If you just need a very lightweight DITA environment, you might be interested in the [Lightweight DITA](http://docs.oasis-open.org/dita/LwDITA/v1.0/LwDITA-v1.0.html) project.
+
+If you are sure you want to specialize DITA, you should read the chapter [Configuration, specialization, generalization, and constraints](http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/archSpec/base/configuration-specialization-and-constraints.html#configuration-specialization-and-constraints) of the specification. If you can understand German, the [data2type DITA specialization tutorials](https://www.data2type.de/xml-xslt-xslfo/dita/spezialisierung) will be useful for you. A little bit outdated, but still useful, are the ([Xiruss - DITA specialization tutorials](http://www.xiruss.org/tutorials/dita-specialization/) by W. Eliot Kimber.
 
 
 * * *
 
-*   [DITA XML Specification](#GettingStartedwithDITA-DITAXMLSpecification)
-*   [Development/Specialization](#GettingStartedwithDITA-Development/Specialization)
 *   [Blogs](#GettingStartedwithDITA-Blogs)
 *   [DITA-Transformations](#GettingStartedwithDITA-DITA-Transformations)
 *   [Style Guides](#GettingStartedwithDITA-StyleGuides)
@@ -27,19 +58,6 @@ Resources for learning DITA: [DITA resources](/dita-resources/index.html)
 
 * * *
 
-  
-DITA XML Specification
-----------------------
-
-*   [DITA XML Specification](http://docs.oasis-open.org/dita/dita/v1.3/os/part3-all-inclusive/dita-v1.3-os-part3-all-inclusive.html) - The specification contains the technical reference and many useful examples.
-
-Development/Specialization
---------------------------
-
-*   [DITA Generator](https://dita-generator-hrd.appspot.com/) - DITA Generator is a Python program that generates DITA shell DTDs, DITA topic specialization stubs, and DITA-OT plug-in stubs.
-*   [data2type - DITA Spezialisierung](https://www.data2type.de/xml-xslt-xslfo/dita/spezialisierung/) (German) - DITA specialization tutorials by the german company data2type
-*   [Xiruss - DITA Specialization Tutorials](http://www.xiruss.org/tutorials/dita-specialization/) - DITA specialization tutorials by E. Kimber  
-    
 
 DITA-Transformations
 --------------------
@@ -52,10 +70,6 @@ Style Guides
 *   [The DITA Style Guide Best Practices for Authors](https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/)[![](attachments/29229091/39754857.png)](https://github.com/hyperwrite/DITAStyleGuide) - The DITA Style Guide is designed to help DITA authors implement DITA consistently by providing an authoritative reference.
 *   [Microsoft Manual of Style](https://www.microsoftpressstore.com/store/microsoft-manual-of-style-9780735648715) 
 
-Youtube-Channels
-----------------
-
-*   [oxygenxml](https://www.youtube.com/channel/UCtCxC8CmavB_DQAq1pOy7rQ) - Official Youtube-Channel of the famous [oXygen XML](http://oxygenxml.com/) Editor. This channel mainly contains video manuals and recordings of presentations.
 
 Books
 -----
