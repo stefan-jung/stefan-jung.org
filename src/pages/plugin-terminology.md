@@ -116,12 +116,10 @@ Using the plugin
 
 **org.doctales.terminology** ships a few sample files, that show you how to create terms and create the various outputs. To test the transformations, just open the `terminology.ditamap` in the oXygen DITA Maps Manager and run a transformation scenario.
 
-
 This page explains how to use the termchecker for DITA. The DITA Termchecker is technically a [Schematron](http://www.schematron.com/) file, that searches for not recommended terms and replaces them with preferred synonyms. It is recommended [add a new document type association](http://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/preferences-document-type-association.html) by extending the `DITA` framework and [create a new validatation scenario](https://www.oxygenxml.com/doc/versions/18/ug-editor/tasks/create-validation-scenario.html) using the termchecker DITA Schematron file.
 
-**Table of Contents**
 
-/\*<!\[CDATA\[\*/ div.rbtoc1687809294174 {padding: 0px;} div.rbtoc1687809294174 ul {list-style: disc;margin-left: 0px;} div.rbtoc1687809294174 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
+**Table of Contents**
 
 *   [Parameters](#TermcheckerDITA-Parameters)
 *   [Publishing a Termchecker for DITA using the dita command](#TermcheckerDITA-PublishingaTermcheckerforDITAusingtheditacommand)
@@ -189,11 +187,6 @@ The deprecated and the allowed term notations are defined in the `truck.dita` 
 
 This page explains how to use the termchecker for XLIFF. The Termchecker XLIFF (as the [Termchecker DITA](Termchecker-DITA_40008098.html)) is technically a [Schematron](http://www.schematron.com/) file, that searches for not recommended terms and replaces them with preferred synonyms. It is recommended [add a new document type association](http://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/preferences-document-type-association.html) by extending the `XLIFF` framework and [create a new validatation scenario](https://www.oxygenxml.com/doc/versions/18/ug-editor/tasks/create-validation-scenario.html) using the termchecker XLIFF Schematron file.
 
-**Table of Contents**
-
-/\*<!\[CDATA\[\*/ div.rbtoc1687809295943 {padding: 0px;} div.rbtoc1687809295943 ul {list-style: disc;margin-left: 0px;} div.rbtoc1687809295943 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
-
-*   [Parameters](#TermcheckerXLIFF-Parameters)
 
 #### Parameters
 
