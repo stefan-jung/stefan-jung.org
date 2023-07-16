@@ -129,9 +129,12 @@ This page explains how to use the termchecker for DITA. The DITA Termchecker is 
 
 #### Parameters
 
-The termchecker for DITA transformation supports the following parameters, that can be passed with `**-Dparameter=value**` to the dita command. You can find more information about parameters on [Building output using the dita command](http://www.dita-ot.org/dev/user-guide/build-using-dita-command.html).
+The termchecker for DITA transformation supports the following parameters, that can be passed with `-Dparameter=value` to the dita command. You can find more information about parameters on [Building output using the dita command](http://www.dita-ot.org/dev/user-guide/build-using-dita-command.html).
 
-<table class="wrapped confluenceTable"><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh">Parameter</th><th class="confluenceTh">Values</th><th class="confluenceTh">Description</th></tr><tr><td class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Eclipse" data-theme="Eclipse">args.language</pre></div></div></div></td><td class="confluenceTd"><strong>Example</strong>: <code>de-DE</code></td><td class="confluenceTd">Language of the terminology check rules</td></tr></tbody></table>
+| Parameter       | Values  | Description                             |
+|-----------------|---------|-----------------------------------------|
+| `args.language` | `de-DE` | Language of the terminology check rules |
+
 
 #### Publishing a Termchecker for DITA using the dita command
 
@@ -194,7 +197,10 @@ This page explains how to use the termchecker for XLIFF. The Termchecker XLIFF (
 
 #### Parameters
 
-<table class="wrapped confluenceTable"><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh">Parameter</th><th class="confluenceTh">Values</th><th class="confluenceTh">Description</th></tr><tr><td class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Eclipse" data-theme="Eclipse">args.check.elements</pre></div></div></div></td><td class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Eclipse" data-theme="Eclipse">"source", "target", "both"</pre></div></div><p class="auto-cursor-target"><strong>Default</strong>: <code>source</code></p></div></td><td class="confluenceTd">Choose whether terms should be checked only in source elements or target elements or in both of them.</td></tr><tr><td colspan="1" class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Eclipse" data-theme="Eclipse">args.language</pre></div></div></div></td><td colspan="1" class="confluenceTd"><strong>Example</strong>: <code>de-DE</code></td><td colspan="1" class="confluenceTd">Language of the terminology check rules</td></tr></tbody></table>
+| Parameter             | Values                                       | Description                                                                                          |
+|-----------------------|----------------------------------------------|------------------------------------------------------------------------------------------------------|
+| `args.check.elements` | `source`, `target`, `both` Default: `source` | Choose whether terms should be checked only in source elements or target elements or in both of them |
+| `args.language`       | Example: `de-DE`                             | Language of the terminology check rules                                                              |
 
 
 The DITA Termbrowser Responsive (format: `termbrowser-reponsive`) is a reponsive website for browsing through your terminology database.
