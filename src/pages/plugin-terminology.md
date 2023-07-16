@@ -32,29 +32,20 @@ Parent: <a class="crumb" href="{{ crumb.url | url }}">{{ crumb.title }}</a>
 Features
 ========
 
-*   Create and change terms easily using specialized DITA topics. The new DITA `<termentry>` topic represents a single term. Terms are linked together to a terminology database using the `<termmap>` map.
-*   Author terms easily using an <oXygen/> XML framework with author mode stylesheets, that simplify the editing of `<termentry>` and `<termmap>` topics.
-
+*   Create and change terms easily using specialized DITA topics. The new DITA `<termentry>` topic represents a single terminology concept. Terminology concepts are linked together to a terminology database using the new DITA `<termmap>` map.
+*   Author terminology concepts easily using an <oXygen/> XML framework, which is providing author mode stylesheets, which simplify the editing of `<termentry>` and `<termmap>` topics and maps.
   
 
 Termbrowser
 -----------
 
-Termbrowser are designed to browse through your terminology database.
+The termbrowser is designed to browse through your terminology database.    
 
-*   [Termbrowser Classic](/wiki/spaces/DOC/pages/40009112/Termbrowser+Classic) — The DITA Termbrowser Classic (format: `termbrowser-classic`) is a frame-based website for browsing through your terminology database.
-    
-*   [Termbrowser HTML5](/wiki/spaces/DOC/pages/40009067/Termbrowser+HTML5) — The DITA Termbrowser HTML5 is based on the plugin **org.dita.html5**, that is shipped with the DITA-OT. Use this termbrowser, if you don't want to rely on the proprietary **com.oxygenxml.webhelp** termbrowser. This is, for example, recommended, if you plan to build your termbrowser in a Continuous Deployment Pipeline. The **com.oxygenxml.webhelp** transformation scenario requires an expensive server license to do that.
-    
-*   [Termbrowser Responsive](/wiki/spaces/DOC/pages/40008984/Termbrowser+Responsive) — The DITA Termbrowser Responsive (format: `termbrowser-reponsive`) is a reponsive website for browsing through your terminology database.
-    
-
-  
 
 Termchecker
 -----------
 
-Termchecker are designed to search for not recommended terms in various data formats.
+The termchecker is designed to search for not recommended terms in various data formats.
 
 *   [Termchecker XLIFF](/wiki/spaces/DOC/pages/40008144/Termchecker+XLIFF) — This page explains how to use the termchecker for XLIFF. The Termchecker XLIFF (as the [Termchecker DITA](/wiki/spaces/DOC/pages/40008098/Termchecker+DITA)) is technically a [Schematron](http://www.schematron.com/) file, that searches for not recommended terms and replaces them with preferred synonyms. It is recommended [add a new document type association](http://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/preferences-document-type-association.html) by extending the `XLIFF` framework and [create a new validatation scenario](https://www.oxygenxml.com/doc/versions/18/ug-editor/tasks/create-validation-scenario.html) using the termchecker XLIFF Schematron file.
     
