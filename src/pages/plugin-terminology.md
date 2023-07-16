@@ -20,16 +20,13 @@ preloads:
 Parent: <a class="crumb" href="{{ crumb.url | url }}">{{ crumb.title }}</a>
 {% endfor %}
 
-[org.doctales.terminology](https://github.com/doctales/org.doctales.terminology) is a plugin for the [DITA-OT](http://dita-ot.github.io/) for creating a DITA-based terminology database. This site should help you to get started. If you have a question, go to the [questions](https://doctales.atlassian.net/wiki/display/TERM/questions/all) section and ask the DOCTALES team or join our [#terminology](https://doctales.slack.com/) Slack channel. If you have found a bug or want to request a feature, please raise an [issue](https://github.com/doctales/org.doctales.terminology/issues).
+[org.doctales.terminology](https://github.com/doctales/org.doctales.terminology) is a plugin for the [DITA-OT](http://dita-ot.github.io/) for creating a DITA-based terminology database. If you have found a bug or want to request a feature, please raise an [issue](https://github.com/stefan-jung/org.jung.terminology/issues).
 
   
 
 **Quick Start Presentation**: Recorded by [Syncro Soft/OxygenXML Editor](https://www.oxygenxml.com/about_us.html), DITA-OT Day 2016, Munich
 
-Slides: [https://doctales.github.io/presentations/presentation-dita-ot-day/index.html](https://doctales.github.io/presentations/presentation-dita-ot-day/index.html)
-
-  
-
+<!-- Slides: [https://doctales.github.io/presentations/presentation-dita-ot-day/index.html](https://doctales.github.io/presentations/presentation-dita-ot-day/index.html) -->
   
 
 Features
