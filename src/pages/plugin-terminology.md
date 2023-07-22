@@ -20,44 +20,32 @@ preloads:
 Parent: <a class="crumb" href="{{ crumb.url | url }}">{{ crumb.title }}</a>
 {% endfor %}
 
-[org.doctales.terminology](https://github.com/doctales/org.doctales.terminology) is a plugin for the [DITA-OT](http://dita-ot.github.io/) for creating a DITA-based terminology database. This site should help you to get started. If you have a question, go to the [questions](https://doctales.atlassian.net/wiki/display/TERM/questions/all) section and ask the DOCTALES team or join our [#terminology](https://doctales.slack.com/) Slack channel. If you have found a bug or want to request a feature, please raise an [issue](https://github.com/doctales/org.doctales.terminology/issues).
+[org.doctales.terminology](https://github.com/doctales/org.doctales.terminology) is a plugin for the [DITA-OT](http://dita-ot.github.io/) for creating a DITA-based terminology database. If you have found a bug or want to request a feature, please raise an [issue](https://github.com/stefan-jung/org.jung.terminology/issues).
 
   
 
 **Quick Start Presentation**: Recorded by [Syncro Soft/OxygenXML Editor](https://www.oxygenxml.com/about_us.html), DITA-OT Day 2016, Munich
 
-Slides: [https://doctales.github.io/presentations/presentation-dita-ot-day/index.html](https://doctales.github.io/presentations/presentation-dita-ot-day/index.html)
-
-  
-
+<!-- Slides: [https://doctales.github.io/presentations/presentation-dita-ot-day/index.html](https://doctales.github.io/presentations/presentation-dita-ot-day/index.html) -->
   
 
 Features
 ========
 
-*   Create and change terms easily using specialized DITA topics. The new DITA `<termentry>` topic represents a single term. Terms are linked together to a terminology database using the `<termmap>` map.
-*   Author terms easily using an <oXygen/> XML framework with author mode stylesheets, that simplify the editing of `<termentry>` and `<termmap>` topics.
-
+*   Create and change terms easily using specialized DITA topics. The new DITA `<termentry>` topic represents a single terminology concept. Terminology concepts are linked together to a terminology database using the new DITA `<termmap>` map.
+*   Author terminology concepts easily using an <oXygen/> XML framework, which is providing author mode stylesheets, which simplify the editing of `<termentry>` and `<termmap>` topics and maps.
   
 
 Termbrowser
 -----------
 
-Termbrowser are designed to browse through your terminology database.
+The termbrowser is designed to browse through your terminology database.    
 
-*   [Termbrowser Classic](/wiki/spaces/DOC/pages/40009112/Termbrowser+Classic) — The DITA Termbrowser Classic (format: `termbrowser-classic`) is a frame-based website for browsing through your terminology database.
-    
-*   [Termbrowser HTML5](/wiki/spaces/DOC/pages/40009067/Termbrowser+HTML5) — The DITA Termbrowser HTML5 is based on the plugin **org.dita.html5**, that is shipped with the DITA-OT. Use this termbrowser, if you don't want to rely on the proprietary **com.oxygenxml.webhelp** termbrowser. This is, for example, recommended, if you plan to build your termbrowser in a Continuous Deployment Pipeline. The **com.oxygenxml.webhelp** transformation scenario requires an expensive server license to do that.
-    
-*   [Termbrowser Responsive](/wiki/spaces/DOC/pages/40008984/Termbrowser+Responsive) — The DITA Termbrowser Responsive (format: `termbrowser-reponsive`) is a reponsive website for browsing through your terminology database.
-    
-
-  
 
 Termchecker
 -----------
 
-Termchecker are designed to search for not recommended terms in various data formats.
+The termchecker is designed to search for not recommended terms in various data formats.
 
 *   [Termchecker XLIFF](/wiki/spaces/DOC/pages/40008144/Termchecker+XLIFF) — This page explains how to use the termchecker for XLIFF. The Termchecker XLIFF (as the [Termchecker DITA](/wiki/spaces/DOC/pages/40008098/Termchecker+DITA)) is technically a [Schematron](http://www.schematron.com/) file, that searches for not recommended terms and replaces them with preferred synonyms. It is recommended [add a new document type association](http://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/preferences-document-type-association.html) by extending the `XLIFF` framework and [create a new validatation scenario](https://www.oxygenxml.com/doc/versions/18/ug-editor/tasks/create-validation-scenario.html) using the termchecker XLIFF Schematron file.
     
@@ -116,12 +104,10 @@ Using the plugin
 
 **org.doctales.terminology** ships a few sample files, that show you how to create terms and create the various outputs. To test the transformations, just open the `terminology.ditamap` in the oXygen DITA Maps Manager and run a transformation scenario.
 
-
 This page explains how to use the termchecker for DITA. The DITA Termchecker is technically a [Schematron](http://www.schematron.com/) file, that searches for not recommended terms and replaces them with preferred synonyms. It is recommended [add a new document type association](http://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/preferences-document-type-association.html) by extending the `DITA` framework and [create a new validatation scenario](https://www.oxygenxml.com/doc/versions/18/ug-editor/tasks/create-validation-scenario.html) using the termchecker DITA Schematron file.
 
-**Table of Contents**
 
-/\*<!\[CDATA\[\*/ div.rbtoc1687809294174 {padding: 0px;} div.rbtoc1687809294174 ul {list-style: disc;margin-left: 0px;} div.rbtoc1687809294174 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
+**Table of Contents**
 
 *   [Parameters](#TermcheckerDITA-Parameters)
 *   [Publishing a Termchecker for DITA using the dita command](#TermcheckerDITA-PublishingaTermcheckerforDITAusingtheditacommand)
@@ -129,9 +115,12 @@ This page explains how to use the termchecker for DITA. The DITA Termchecker is 
 
 #### Parameters
 
-The termchecker for DITA transformation supports the following parameters, that can be passed with `**-Dparameter=value**` to the dita command. You can find more information about parameters on [Building output using the dita command](http://www.dita-ot.org/dev/user-guide/build-using-dita-command.html).
+The termchecker for DITA transformation supports the following parameters, that can be passed with `-Dparameter=value` to the dita command. You can find more information about parameters on [Building output using the dita command](http://www.dita-ot.org/dev/user-guide/build-using-dita-command.html).
 
-<table class="wrapped confluenceTable"><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh">Parameter</th><th class="confluenceTh">Values</th><th class="confluenceTh">Description</th></tr><tr><td class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Eclipse" data-theme="Eclipse">args.language</pre></div></div></div></td><td class="confluenceTd"><strong>Example</strong>: <code>de-DE</code></td><td class="confluenceTd">Language of the terminology check rules</td></tr></tbody></table>
+| Parameter       | Values  | Description                             |
+|-----------------|---------|-----------------------------------------|
+| `args.language` | `de-DE` | Language of the terminology check rules |
+
 
 #### Publishing a Termchecker for DITA using the dita command
 
@@ -186,15 +175,13 @@ The deprecated and the allowed term notations are defined in the `truck.dita` 
 
 This page explains how to use the termchecker for XLIFF. The Termchecker XLIFF (as the [Termchecker DITA](Termchecker-DITA_40008098.html)) is technically a [Schematron](http://www.schematron.com/) file, that searches for not recommended terms and replaces them with preferred synonyms. It is recommended [add a new document type association](http://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/preferences-document-type-association.html) by extending the `XLIFF` framework and [create a new validatation scenario](https://www.oxygenxml.com/doc/versions/18/ug-editor/tasks/create-validation-scenario.html) using the termchecker XLIFF Schematron file.
 
-**Table of Contents**
-
-/\*<!\[CDATA\[\*/ div.rbtoc1687809295943 {padding: 0px;} div.rbtoc1687809295943 ul {list-style: disc;margin-left: 0px;} div.rbtoc1687809295943 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
-
-*   [Parameters](#TermcheckerXLIFF-Parameters)
 
 #### Parameters
 
-<table class="wrapped confluenceTable"><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh">Parameter</th><th class="confluenceTh">Values</th><th class="confluenceTh">Description</th></tr><tr><td class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Eclipse" data-theme="Eclipse">args.check.elements</pre></div></div></div></td><td class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Eclipse" data-theme="Eclipse">"source", "target", "both"</pre></div></div><p class="auto-cursor-target"><strong>Default</strong>: <code>source</code></p></div></td><td class="confluenceTd">Choose whether terms should be checked only in source elements or target elements or in both of them.</td></tr><tr><td colspan="1" class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Eclipse" data-theme="Eclipse">args.language</pre></div></div></div></td><td colspan="1" class="confluenceTd"><strong>Example</strong>: <code>de-DE</code></td><td colspan="1" class="confluenceTd">Language of the terminology check rules</td></tr></tbody></table>
+| Parameter             | Values                                       | Description                                                                                          |
+|-----------------------|----------------------------------------------|------------------------------------------------------------------------------------------------------|
+| `args.check.elements` | `source`, `target`, `both` Default: `source` | Choose whether terms should be checked only in source elements or target elements or in both of them |
+| `args.language`       | Example: `de-DE`                             | Language of the terminology check rules                                                              |
 
 
 The DITA Termbrowser Responsive (format: `termbrowser-reponsive`) is a reponsive website for browsing through your terminology database.
@@ -225,7 +212,11 @@ If you want to publish the _termbrowser responsive_ via command line interface, 
 
 #### Parameters
 
-<table class="wrapped confluenceTable"><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh">Parameter</th><th class="confluenceTh">Values</th><th class="confluenceTh">Description</th></tr><tr><td colspan="1" class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Eclipse" data-theme="Eclipse">args.default.language</pre></div></div></div></td><td colspan="1" class="confluenceTd"><p><strong>Example</strong>: <code>en-GB</code></p></td><td colspan="1" class="confluenceTd">Language used to generate the termbrowser labels.</td></tr><tr><td class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Eclipse" data-theme="Eclipse">args.termstats</pre></div></div></div></td><td class="confluenceTd"><div class="content-wrapper"><strong>Example</strong>: <code>../termstats.xml</code></div></td><td class="confluenceTd">Relative path to the terminology statistics (<code>termstats.xml</code> file). The <code>termstats.xml</code> file is automatically generated with each termbrowser publication. If you pass the <code>termstats.xml</code> from the previous build with this parameter, you can generate a&nbsp;chronological sequence of your terminology metadata.</td></tr></tbody></table>
+| Parameter               | Values                      | Description                                                                                                                                                                                                                                                                                                          |
+|-------------------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `args.default.language` | Example: `en-GB`            | Language used to generate the termbrowser labels.                                                                                                                                                                                                                                                                    |
+| `args.termstats`        | Example: `../termstats.xml` | Relative path to the terminology statistics (`termstats.xml` file). The `termstats.xml` file is automatically generated with each termbrowser publication. If you pass the `termstats.xml` from the previous build with this parameter, you can generate a&nbsp;chronological sequence of your terminology metadata. |
+
 
 #### Example
 
