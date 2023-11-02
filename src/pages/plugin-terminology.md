@@ -232,14 +232,11 @@ The transformation scenarios `TBX-Min` transforms the terminology to a TBX-Min f
 
 The transformation scenario `TBX-Basic` transforms the terminology to a [TBX-Basic](http://www.ttt.org/oscarstandards/tbx/tbx-basic.html) file. A TBX-Basic file is a lighter version of the Terminology Base Exchange (TBX) format. You can send this file to a language service provider to make sure, that the translator uses the correct terminology during translation.
 
-**Table of Contents**
-
-/\*<!\[CDATA\[\*/ div.rbtoc1687809296096 {padding: 0px;} div.rbtoc1687809296096 ul {list-style: disc;margin-left: 0px;} div.rbtoc1687809296096 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
-
-*   [Parameters](#TBX-Basic-Parameters)
-
-  
 
 #### Parameters
 
-<table class="wrapped confluenceTable"><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh">Parameter</th><th class="confluenceTh">Values</th><th class="confluenceTh">Description</th></tr><tr><td class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Eclipse" data-theme="Eclipse">args.source.language</pre></div></div></div></td><td class="confluenceTd"><div class="content-wrapper"><strong>Example</strong>: <code>de-DE</code></div></td><td class="confluenceTd">The source language of the terms.</td></tr><tr><td colspan="1" class="confluenceTd"><div class="content-wrapper"><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Eclipse" data-theme="Eclipse">args.target.language</pre></div></div></div></td><td colspan="1" class="confluenceTd"><div class="content-wrapper"><strong>Example</strong>: <code>de-DE</code></div></td><td colspan="1" class="confluenceTd">The target language of the terms.</td></tr></tbody></table>
+| Parameters | Values | Description |
+|-------------------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| args.source.language | **Example**: `de-DE` | The source language of the terms. |
+| args.target.language | **Example**: `de-DE` | The target language of the terms. |
+
