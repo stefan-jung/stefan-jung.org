@@ -48,7 +48,7 @@ key=value
 Installation
 ============
 
-Installting the Plugin
+Installing the Plugin
 ----------------------
 
 Install the plugin to the DITA-OT with the following command:
