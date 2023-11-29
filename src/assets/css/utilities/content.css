@@ -17,3 +17,8 @@
   inline-size: 100%;
   grid-column: 1 / 4;
 }
+
+code {
+  overflow: hidden;
+  white-space: nowrap;
+}
