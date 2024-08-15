@@ -36,14 +36,10 @@ Main Features
 <!-- Slides: [https://doctales.github.io/presentations/presentation-dita-ot-day/index.html](https://doctales.github.io/presentations/presentation-dita-ot-day/index.html) -->
   
 
-
-
-  
-
 Termbrowser
 -----------
 
-The termbrowser is designed to browse through your terminology database.    
+The termbrowser is designed to browse through your terminology database. You can find an example generated from the provided sample files here: [stefanjung.netlify.app/termbrowser](https://stefanjung.netlify.app/termbrowser/). The termbrowser also contains a [semantic net](https://stefanjung.netlify.app/termbrowser/semantic-net/) and displays [statistics](https://stefanjung.netlify.app/termbrowser/semantic-net/termstats.html).
 
 
 Termchecker
@@ -76,8 +72,8 @@ Installation
 Prerequisites
 -------------
 
-*   DITA-OT 2.3.x, DITA-OT 2.4.x, DITA-OT 2.5.x or DITA 3.x
-*   oXygen XML 19 or higher (optional)
+*   DITA-OT 3.x or DITA-OT 4.x
+*   oXygen XML 23 or higher
 
   
 
@@ -149,17 +145,11 @@ dita --input terminology.ditamap --format termchecker-dita -Dargs.language=en-GB
     1.  In oXygen open the menu `Options` > `Preferences`.
     2.  In the `Document Type Association` menu, select the `DITA` document type association and click the button`Edit`.
     3.  Open the `Validation` tab and click the + button, to create a new validation scenario.
-    4.  Create a new validation scenario named `Terminology` and specify the Schematron schema.  
-        ![](attachments/40008098/40009206.png)  
-        ![](attachments/40008098/40009213.png)  
-        ![](attachments/40008098/40009219.png)  
-          
+    4.  Create a new validation scenario named `Terminology` and specify the Schematron schema.
         
 4.  Create a new DITA topic.
 5.  Set the `xml:lang` attribute of the topic to `en-GB` and write the word `truck` somewhere in the topic.  
-    The term violation is indicated with a small lamp icon ![](attachments/40008098/40009225.png). Click on the lamp select the `Replace with an allowed term`action. This works both in text and in author mode.  
-    ![](attachments/40008098/40009231.gif)  
-    ![](attachments/40008098/40009239.gif)  
+    The term violation is indicated with a small lamp icon. Click on the lamp select the `Replace with an allowed term`action. This works both in text and in author mode.
       
     The deprecated term has been replaced.
 
@@ -194,7 +184,7 @@ The _termbrowser responsive_ is based on the oXygen plugin **com.oxygenxml.webh
 
 #### Prerequisites
 
-To publish the _termbrowser responsive_, you need to have the plugins **com.oxygenxml.webhelp.responsive** and **com.oxygenxml.webhelp.common** (since <oXygen/> 19.1) or **com.oxygenxml.webhelp** (<oXygen/> 19.0 and earlier) installed to your DITA-OT.
+To publish the _termbrowser responsive_, you need to have the plugins **com.oxygenxml.webhelp.responsive** and **com.oxygenxml.webhelp.common** (since <oXygen/> 19.1) installed to your DITA-OT. This means, you need to use the DITA-OT which is shipped with Oxygen XML (because it contains all those plugins) or you need to use the [Oxygen Publishing Engine](https://www.oxygenxml.com/publishing_engine.html), if you want to use this on a server.
 
 If you want to publish the _termbrowser responsive_ via command line interface, you need an additional license, see [Buy Oxygen XML WebHelp](https://www.oxygenxml.com/xml_webhelp/buy_oxygen_xml_webhelp.html).
 
