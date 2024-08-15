@@ -20,20 +20,24 @@ preloads:
 Parent: <a class="crumb" href="{{ crumb.url | url }}">{{ crumb.title }}</a>
 {% endfor %}
 
-[org.doctales.terminology](https://github.com/doctales/org.doctales.terminology) is a plugin for the [DITA-OT](http://dita-ot.github.io/) for creating a DITA-based terminology database. If you have found a bug or want to request a feature, please raise an [issue](https://github.com/stefan-jung/org.jung.terminology/issues).
+[org.jung.terminology](https://github.com/stefan-jung/org.jung.terminology) is a plugin for the [DITA-OT](http://dita-ot.github.io/) for creating a DITA-based terminology database. The plugin ships specialized DITA Topics and DITA Maps, such as the **`<termentry>`** topic type. The **`<termentry>`** represents a single terminology concept and contains all metadata and all linguistic information of the terminology concept in all languages. **`<termentry>`** topics are not meant to be used or reused in a normal DITA project, they are just used for storing the terminology. It is possible to generate a terminology browser from your **`<termentry>`** topics, which allows others to navigate to your terminology. You will find several examples in the `samples` directory of the plugin.
 
-  
+If you have found a bug or want to request a feature, please raise an [issue](https://github.com/stefan-jung/org.jung.terminology/issues).
+
+
+Main Features
+=============
+
+* Create and change terms easily using specialized DITA topics. The new DITA `<termentry>` topic represents a single terminology concept. Terminology concepts are linked together to a terminology database using the new DITA `<termmap>` map.
+* Author terminology concepts easily using an <oXygen/> XML framework, which is providing author mode stylesheets, which simplify the editing of `<termentry>` and `<termmap>` topics and maps.
 
 **Quick Start Presentation**: Recorded by [Syncro Soft/OxygenXML Editor](https://www.oxygenxml.com/about_us.html), DITA-OT Day 2016, Munich
 
 <!-- Slides: [https://doctales.github.io/presentations/presentation-dita-ot-day/index.html](https://doctales.github.io/presentations/presentation-dita-ot-day/index.html) -->
   
 
-Features
-========
 
-*   Create and change terms easily using specialized DITA topics. The new DITA `<termentry>` topic represents a single terminology concept. Terminology concepts are linked together to a terminology database using the new DITA `<termmap>` map.
-*   Author terminology concepts easily using an <oXygen/> XML framework, which is providing author mode stylesheets, which simplify the editing of `<termentry>` and `<termmap>` topics and maps.
+
   
 
 Termbrowser
@@ -83,7 +87,7 @@ Install the plugin to the DITA-OT
 You can install the plugin to the DITA-OT with a single command:
 
 ```xml
-dita --install https://github.com/doctales/org.doctales.terminology/archive/master.zip
+dita --install https://github.com/stefan-jung/org.jung.terminology/archive/master.zip
 ```
 
   
@@ -95,14 +99,14 @@ The oXygen framework helps you to author your terminology database. It consists 
 
 1.  In oXygen XML open the menu `Options` > `Preferences`.
 2.  In the preferences, open `Document Type Association` > `Locations`.
-3.  Add the directory of the plugin, e.g. `/home/user/workspace/DITA/dita-ot/plugins/org.doctales.terminology`.
+3.  Add the directory of the plugin, e.g. `/home/user/workspace/DITA/dita-ot/plugins/org.jung.terminology`.
 
   
 
 Using the plugin
 ================
 
-**org.doctales.terminology** ships a few sample files, that show you how to create terms and create the various outputs. To test the transformations, just open the `terminology.ditamap` in the oXygen DITA Maps Manager and run a transformation scenario.
+**org.jung.terminology** ships a few sample files, that show you how to create terms and create the various outputs. To test the transformations, just open the `terminology.ditamap` in the oXygen DITA Maps Manager and run a transformation scenario.
 
 This page explains how to use the termchecker for DITA. The DITA Termchecker is technically a [Schematron](http://www.schematron.com/) file, that searches for not recommended terms and replaces them with preferred synonyms. It is recommended [add a new document type association](http://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/preferences-document-type-association.html) by extending the `DITA` framework and [create a new validatation scenario](https://www.oxygenxml.com/doc/versions/18/ug-editor/tasks/create-validation-scenario.html) using the termchecker DITA Schematron file.
 
