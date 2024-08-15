@@ -1,0 +1,149 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" data-whc_version="26.0" lang="en" dir="ltr">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="wh-path2root" content=""/><title>Termbrowser</title>
+        
+        
+                
+        
+
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/commons.css?buildId=2023100622"/>
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/main.css?buildId=2023100622"/>
+
+    <script src="./oxygen-webhelp/app/options/properties.js?buildId=20240815083159"></script>
+    <script src="./oxygen-webhelp/app/localization/strings.js?buildId=2023100622"></script>
+    <script src="./oxygen-webhelp/app/search/index/keywords.js?buildId=20240815083159"></script>
+    <script src="./oxygen-webhelp/app/commons.js?buildId=2023100622"></script>
+    <script src="./oxygen-webhelp/app/main.js?buildId=2023100622"></script>
+
+    
+
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/css/stefan-jung.css?buildId=2023100622"/>
+        
+        <!-- JQuery and JQuery UI -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"/>
+    
+<!-- Bootstrap -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"/>-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
+    
+<!-- flag-icon is used to render country flags in the terminology entry topics -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+
+<!-- vis.js is used to render the terminology semantic net -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.6/standalone/umd/vis-network.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet"/>
+
+<!--
+    chart.js
+    
+    chart.js is used to render the terminology statistics.
+    
+    The Oxygen Webhelp plugin is using require.js for asynchronous loading of JavaScript libraries.
+    The main benefit is, that the page is loaded and rendered while the JavaScript libraries are loaded.
+    The "normal way" is, that all CSS/JS libraries are loaded BEFORE the HTML content is rendered.
+    This slows down the rendering of the website.
+    
+    require.js can load only AMD modules, so be sure to require one of the UMD builds.
+    In order to use the time scale, you need to make sure one of the available date adapters and 
+    corresponding date library are fully loaded after requiring chart.js.
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"/>
+
+        
+    </head>
+    <body class="wh_main_page">
+        <a href="#content" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        <div class="logos">
+    <div class="logo">
+        <a class="semantic-net-header-link" href="semantic-net.html">Semantic Net</a>
+    </div>
+    <div class="logo">
+        <a class="termstats-header-link" href="termstats.html">Terminology Statistics</a>
+    </div>
+</div>
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="index.html" class=" wh_logo d-none d-sm-block "><img src="oxygen-webhelp\template\logo/stefan-jung-logo.svg" alt="Termbrowser"/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span xmlns="" class="title">Termbrowser</span></a></div>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+                
+        
+        <div class=" wh_search_input navbar-form wh_main_page_search search " role="form">
+            
+            
+            
+            
+            <div class="wh_welcome"><div>
+  <p><b>Welcome to the Termbrowser</b></p>
+  <p>The termbrowser contains sample terminology data from the subject area "car".</p>
+  <ul>
+    <li class="welcome-li">Use the termbrowser to navigate within the termbase.</li>
+    <li class="welcome-li">Use the <a href="semantic-net.html">Semantic Net</a> to visualize the relations between your terms.</li>
+    <li class="welcome-li">Use the <a href="termstats.html">Terminology Statistics</a> to analyze your terminology dataset.</li>
+  </ul>   
+</div></div>          
+            <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+            
+        </div>
+        
+        
+        
+        
+        <div class="wh_content_area " id="content">
+            
+            <div class="container-fluid wh_content_flex_container">
+                
+                <div class=" wh_main_page_toc "><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="advancedDriverAssistanceSystem.html" data-id="advancedDriverAssistanceSystem">Advanced driver assistance systems</a></span><div class=" wh_toc_shortdesc " data-id="advancedDriverAssistanceSystem">Advanced Driver Assistance Systems are systems to help the driver in the driving       process. When designed with a safe Human-Machine Interface, they should increase car safety       and more generally road safety.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="antiLockBrakingSystem.html" data-id="antiLockBrakingSystem">Anti-lock breaking system</a></span><div class=" wh_toc_shortdesc " data-id="antiLockBrakingSystem">An anti-lock braking system is an automobile safety system that allows the       wheels on a motor vehicle to maintain tractive contact with the road surface according to       driver inputs while braking, preventing the wheels from locking up (ceasing rotation) and       avoiding uncontrolled skidding.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="axle.html" data-id="axle">Axle</a></span><div class=" wh_toc_shortdesc " data-id="axle">An axle is a central shaft for a rotating wheel or gear.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="beetle.html" data-id="beetle">Volkswagen Beetle</a></span><div class=" wh_toc_shortdesc " data-id="beetle">The Volkswagen Beetle is a two-door, four passenger, rear-engine economy car manufactured and marketed by German automaker Volkswagen (VW) from 1938 until 2003.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="brakeLight.html" data-id="brakeLight">Brake Light</a></span><div class=" wh_toc_shortdesc " data-id="brakeLight">Red steady-burning rear lights, brighter than the rear position lamps, are       activated when the driver applies the vehicle's brakes. They are required to be fitted in       multiples of two, symmetrically at the left and right edges of the rear of every       vehicle.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="bus.html" data-id="bus">Bus</a></span><div class=" wh_toc_shortdesc " data-id="bus">A bus is a road vehicle designed to carry many passengers.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="car.html" data-id="car">Car</a></span><div class=" wh_toc_shortdesc " data-id="car">A car is a wheeled, self-powered motor vehicle used for transportation.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="chassis.html" data-id="chassis">Chassis</a></span><div class=" wh_toc_shortdesc " data-id="chassis">A chassis consists of an internal vehicle frame that supports a manmade object in       its construction and use.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="classBMotorHome.html" data-id="classBMotorHome">Class B motorhome</a></span><div class=" wh_toc_shortdesc " data-id="classBMotorHome">Built using a conventional van, to which either a raised roof has been added or       the back replaced by a low-profile body (aka coach-built).</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="classBPlusMotorHome.html" data-id="classBPlusMotorHome">Class B+ motorhome</a></span><div class=" wh_toc_shortdesc " data-id="classBPlusMotorHome">Class B+ motorhomes are either built on a truck or van chassis. They usually       include a "cab-over" section.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="classCMotorHome.html" data-id="classCMotorHome">Class C motorhome</a></span><div class=" wh_toc_shortdesc " data-id="classCMotorHome">A Class C motorhome is built upon a minimal truck platform with a forward engine       and transmission connected by driveshaft to a rear axle that propels dual-mounted rear       wheels.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="coachwork.html" data-id="coachwork">Coachwork (vehicle body)</a></span><div class=" wh_toc_shortdesc " data-id="coachwork">Coachwork is the body of a motor vehicle (automobile, van, bus or truck), a       horse-drawn coach or carriage (whence the term originated, derived from the Hungarian town of       Kocs),[1] or, by extension, a railroad car or railway carriage.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="dieselEngine.html" data-id="dieselEngine">Diesel engine</a></span><div class=" wh_toc_shortdesc " data-id="dieselEngine">The diesel engine (also known as a compression-ignition or CI engine) is an       internal combustion engine in which ignition of the fuel that has been injected into the       combustion chamber is caused by the high temperature which a gas achieves when greatly       compressed (adiabatic compression).</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="electronicStabilityControl.html" data-id="electronicStabilityControl">Electronic stability control</a></span><div class=" wh_toc_shortdesc " data-id="electronicStabilityControl">Electronic stability control is a computerized technology that improves a       vehicle's stability by detecting and reducing loss of traction (skidding).</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="engine.html" data-id="engine">Engine</a></span><div class=" wh_toc_shortdesc " data-id="engine">An engine is a machine designed to convert one form of energy into mechanical       energy.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="exhaustSystem.html" data-id="exhaustSystem">Exhaust system</a></span><div class=" wh_toc_shortdesc " data-id="exhaustSystem">An exhaust system is usually piping used to guide reaction exhaust gases away       from a controlled combustion inside an engine or stove. The entire system conveys burnt gases       from the engine and includes one or more exhaust pipes.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="gasengine.html" data-id="gasengine">Gas engine</a></span><div class=" wh_toc_shortdesc " data-id="gasengine">A gas engine is an internal combustion engine which runs on a gas fuel, such as       coal gas, producer gas, biogas, landfill gas or natural gas.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="headlamp.html" data-id="headlamp">Headlamp</a></span><div class=" wh_toc_shortdesc " data-id="headlamp">A headlamp is a lamp attached to the front of a vehicle to light the road       ahead.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="internalCombustionEngine.html" data-id="internalCombustionEngine">Internal combustion engine</a></span><div class=" wh_toc_shortdesc " data-id="internalCombustionEngine">An internal combustion engine is a heat engine where the combustion of a fuel       occurs with an oxidizer (usually air) in a combustion chamber that is an integral part of the       working fluid flow circuit.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="kaessbohrerSetraS110H.html" data-id="kaessbohrerSetraS110H">Kässbohrer Setra S 110 H</a></span><div class=" wh_toc_shortdesc " data-id="kaessbohrerSetraS110H">The Kässbohrer Setra S 110 H is a bus, 43 passenger, rear-engine person       transportation vehicle (bus) manufactured and marketed by German automaker Kässboher       Wagenfabrik Kässbohrer in Ulm, Germany in 1959 until 2003.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="ladderFrame.html" data-id="ladderFrame">Ladder frame</a></span><div class=" wh_toc_shortdesc " data-id="ladderFrame">So named for its resemblance to a ladder, the ladder frame is one of the simplest and oldest of all vehicle frame designs.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="lighting.html" data-id="lighting">Lighting</a></span><div class=" wh_toc_shortdesc " data-id="lighting">Lighting or illumination is the deliberate use of light to achieve a practical or       aesthetic effect. Lighting includes the use of both artificial light sources like lamps and       light fixtures, as well as natural illumination by capturing daylight. The term lightning       system include all necessary parts to provide the vehicle lightning. </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="motorCycle.html" data-id="motorCycle">Motorcycle</a></span><div class=" wh_toc_shortdesc " data-id="motorCycle">A motorcycle is a two- or three-wheeled motor vehicle. Motorcycle design varies       greatly to suit a range of different purposes: long distance travel, commuting, cruising,       sport including racing, and off-road riding.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="motorHome.html" data-id="motorHome">Motorhome</a></span><div class=" wh_toc_shortdesc " data-id="motorHome">A motorhome (or motor coach) is a type of self-propelled recreational vehicle or RV which offers living accommodation combined with a vehicle engine.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="motorVehicle.html" data-id="motorVehicle">Motor vehicle</a></span><div class=" wh_toc_shortdesc " data-id="motorVehicle">A motor vehicle is a self-propelled road vehicle and off-road vehicle, commonly       wheeled, that does not operate on rails, such as trains or trams and used for commercial       purposes on the highways in the transportation of passengers, or passengers and       property.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="petrolEngine.html" data-id="petrolEngine">Petrol engine (spark-ignition)</a></span><div class=" wh_toc_shortdesc " data-id="petrolEngine">A petrol engine (known as a gasoline engine in American English) is an internal       combustion engine with spark-ignition, designed to run on petrol (gasoline) and similar       volatile fuels.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="powertrain.html" data-id="powertrain">Powertrain</a></span><div class=" wh_toc_shortdesc " data-id="powertrain">In a motor vehicle, the term powertrain or powerplant describes the main       components that generate power and deliver it to the road surface, water, or air. This       includes the engine, transmission, drive shafts, differentials, and the final drive (drive       wheels, continuous track as in military tanks or caterpillar tractors, propeller,       etc.).</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="rearFogLamp.html" data-id="rearFogLamp">Rear fog lamp</a></span><div class=" wh_toc_shortdesc " data-id="rearFogLamp">In Europe and other countries adhering to UN Regulation 48, vehicles must be       equipped with one or two bright red "rear fog lamps", which serve as high-intensity rear       position lamps to be turned on by the driver in conditions of poor visibility to make       the vehicle more visible from the rear.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="rearPositionLamp.html" data-id="rearPositionLamp">Rear position lamp</a></span><div class=" wh_toc_shortdesc " data-id="rearPositionLamp">Conspicuity for the rear of a vehicle is provided by rear position lamps. These       are required to produce only red light and to be wired such that they are lit whenever the       front position lamps are lit, including when the headlamps are on. Rear position lamps may be       combined with the vehicle's stop lamps or separate from them.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="reversingLamp.html" data-id="reversingLamp">Reversing lamp</a></span><div class=" wh_toc_shortdesc " data-id="reversingLamp">To warn adjacent vehicle operators and pedestrians of a vehicle's rearward       motion, and to provide illumination to the rear when backing up, each vehicle must be equipped       with one or two rear-mounted, rear-facing reversing lamps.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="transmission.html" data-id="transmission">Transmission</a></span><div class=" wh_toc_shortdesc " data-id="transmission">A transmission is a machine in a power transmission system, which provides       controlled application of the power. Often the term transmission refers simply to the gearbox       that uses gears and gear trains to provide speed and torque conversions from a rotating power       source to another device.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="truck.html" data-id="truck">Truck</a></span><div class=" wh_toc_shortdesc " data-id="truck">A truck is a motor vehicle designed to transport cargo.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="turnSignal.html" data-id="turnSignal">Turn signal</a></span><div class=" wh_toc_shortdesc " data-id="turnSignal">Turn signals are blinking lamps mounted near the left and right front and rear       corners of a vehicle, and sometimes on the sides, activated by the driver on one side of the       vehicle at a time to advertise intent to turn or change lanes towards that side. </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="unitizedBody.html" data-id="unitizedBody">Unitized body</a></span><div class=" wh_toc_shortdesc " data-id="unitizedBody">The term unibody or unit body is short for unitized body, or alternatively unitary       construction design. This engineering approach of a vehicle describes "of a vehicle, a       one-piece frame and body structure" A "type of body/frame construction in which the body of       the vehicle, its floor plan and chassis form a single structure.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="vehicle.html" data-id="vehicle">Vehicle</a></span><div class=" wh_toc_shortdesc " data-id="vehicle">A vehicle is a mobile machine that transports people or cargo.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="wheel.html" data-id="wheel">Wheel</a></span><div class=" wh_toc_shortdesc " data-id="wheel">A wheel is a circular component that is intended to rotate on an axle bearing.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="semantic-net.html" data-id="ui_qlt_xb4_hy">Semantic Net</a></span><div class=" wh_toc_shortdesc " data-id="ui_qlt_xb4_hy">The semantic net visualizes the relations between the terms.</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="termstats.html" data-id="termstats">Terminology statistics</a></span><div class=" wh_toc_shortdesc " data-id="termstats">This topic shows automatically calculated statistics of your terminology   database.</div></div></div>
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div class="webhelp.fragment.footer">
+    <p>Termbrowser generated with <a href="https://github.com/stefan-jung/org.jung.terminology">org.jung.terminology</a></p>
+</div>
+  </div>
+</footer>
+        
+        
+        
+    </body>
+</html>

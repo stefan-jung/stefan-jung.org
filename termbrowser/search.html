@@ -1,0 +1,181 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" data-whc_version="26.0" lang="en" dir="ltr">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="wh-path2root" content=""/><title>Search Results - Termbrowser</title>
+        
+        
+        
+        
+        
+
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/commons.css?buildId=2023100622"/>
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/search.css?buildId=2023100622"/>
+
+    <style>
+        .wh_search_results {
+        min-height: 40%;
+        }
+    </style>
+    
+    <script src="./oxygen-webhelp/app/options/properties.js?buildId=20240815083159"></script>
+    <script src="./oxygen-webhelp/app/localization/strings.js?buildId=2023100622"></script>
+    <script src="./oxygen-webhelp/app/search/index/keywords.js?buildId=20240815083159"></script>
+    <script src="./oxygen-webhelp/app/search/index/htmlFileInfoList.js?buildId=20240815083159"></script>
+    <script src="./oxygen-webhelp/app/search/index/index-1.js?buildId=20240815083159"></script>
+    <script src="./oxygen-webhelp/app/search/index/index-2.js?buildId=20240815083159"></script>
+    <script src="./oxygen-webhelp/app/search/index/index-3.js?buildId=20240815083159"></script>
+    <script src="./oxygen-webhelp/app/search/index/link-to-parent.js?buildId=20240815083159"></script>
+    <script src="./oxygen-webhelp/app/search/index/stopwords.js?buildId=20240815083159"></script>
+    <script src="./oxygen-webhelp/app/search/index/index.js?buildId=20240815083159"></script>
+    <script src="./oxygen-webhelp/app/search/nwSearchFnt.js?buildId=2023100622"></script>
+    <script src="./oxygen-webhelp/app/commons.js?buildId=2023100622"></script>
+    <script src="./oxygen-webhelp/app/search.js?buildId=2023100622"></script>
+
+
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/css/stefan-jung.css?buildId=2023100622"/>
+        
+        <!-- JQuery and JQuery UI -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"/>
+    
+<!-- Bootstrap -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"/>-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
+    
+<!-- flag-icon is used to render country flags in the terminology entry topics -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+
+<!-- vis.js is used to render the terminology semantic net -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.6/standalone/umd/vis-network.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet"/>
+
+<!--
+    chart.js
+    
+    chart.js is used to render the terminology statistics.
+    
+    The Oxygen Webhelp plugin is using require.js for asynchronous loading of JavaScript libraries.
+    The main benefit is, that the page is loaded and rendered while the JavaScript libraries are loaded.
+    The "normal way" is, that all CSS/JS libraries are loaded BEFORE the HTML content is rendered.
+    This slows down the rendering of the website.
+    
+    require.js can load only AMD modules, so be sure to require one of the UMD builds.
+    In order to use the time scale, you need to make sure one of the available date adapters and 
+    corresponding date library are fully loaded after requiring chart.js.
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"/>
+
+        
+    </head>
+    <body class="wh_search_page">
+        <a href="#results" class="sr-only sr-only-focusable">
+            Jump to search results
+        </a>
+        
+        <div class="logos">
+    <div class="logo">
+        <a class="semantic-net-header-link" href="semantic-net.html">Semantic Net</a>
+    </div>
+    <div class="logo">
+        <a class="termstats-header-link" href="termstats.html">Terminology Statistics</a>
+    </div>
+</div>
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="index.html" class=" wh_logo d-none d-sm-block "><img src="oxygen-webhelp\template\logo/stefan-jung-logo.svg" alt="Termbrowser"/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="title">Termbrowser</span></a></div>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <div class=" wh_search_input navbar-form wh_search_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        
+        
+        
+        <div class="container-fluid wh_content_area" id="results">
+            <div class="row">
+                
+        <div class="wh_search_results col-xs-12 col-sm-12 col-md-12 col-lg-12" id="searchResults">
+            <div class="searchPreload">
+                <ul>
+                    <li>
+                        <div class="fakeResult">
+                            <div class="fakeTitle"><!-- --></div>
+                            <div class="fakeText"><!-- --></div>
+                            <div class="fakeText"><!-- --></div>
+                            <div class="fakeText"><!-- --></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fakeResult">
+                            <div class="fakeTitle"><!-- --></div>
+                            <div class="fakeText"><!-- --></div>
+                            <div class="fakeText"><!-- --></div>
+                            <div class="fakeText"><!-- --></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fakeResult">
+                            <div class="fakeTitle"><!-- --></div>
+                            <div class="fakeText"><!-- --></div>
+                            <div class="fakeText"><!-- --></div>
+                            <div class="fakeText"><!-- --></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="wh-search-pagination" class="wh-search-pagination col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+    
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div class="webhelp.fragment.footer">
+    <p>Termbrowser generated with <a href="https://github.com/stefan-jung/org.jung.terminology">org.jung.terminology</a></p>
+</div>
+  </div>
+</footer>
+        
+        
+        
+    </body>
+     
+</html>

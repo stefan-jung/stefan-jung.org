@@ -1,0 +1,49 @@
+<termstats>
+   <currentStatistics>
+      <languages>
+         <language>en-GB</language>
+         <language>de-DE</language>
+         <language>en-US</language>
+      </languages>
+      <termNotationsPerLanguage>
+         <language lang="en-GB">69</language>
+         <language lang="de-DE">47</language>
+         <language lang="en-US">5</language>
+      </termNotationsPerLanguage>
+      <termconflicts/>
+   </currentStatistics>
+   <chronologicalStatistics>
+      <report date="2023-03-10">
+         <numberOfTermTopics>5</numberOfTermTopics>
+         <numberOfLanguages>1</numberOfLanguages>
+         <numberOfPreferredTermNotations>8</numberOfPreferredTermNotations>
+         <numberOfAdmittedTermNotations>2</numberOfAdmittedTermNotations>
+         <numberOfNotRecommendedTermNotations>4</numberOfNotRecommendedTermNotations>
+         <numberOfObsoleteTermNotations>1</numberOfObsoleteTermNotations>
+      </report>
+      <report date="2023-03-15">
+         <numberOfTermTopics>21</numberOfTermTopics>
+         <numberOfLanguages>2</numberOfLanguages>
+         <numberOfPreferredTermNotations>12</numberOfPreferredTermNotations>
+         <numberOfAdmittedTermNotations>20</numberOfAdmittedTermNotations>
+         <numberOfNotRecommendedTermNotations>17</numberOfNotRecommendedTermNotations>
+         <numberOfObsoleteTermNotations>23</numberOfObsoleteTermNotations>
+      </report>
+      <report date="2023-03-22">
+         <numberOfTermTopics>36</numberOfTermTopics>
+         <numberOfLanguages>3</numberOfLanguages>
+         <numberOfPreferredTermNotations>20</numberOfPreferredTermNotations>
+         <numberOfAdmittedTermNotations>7</numberOfAdmittedTermNotations>
+         <numberOfNotRecommendedTermNotations>29</numberOfNotRecommendedTermNotations>
+         <numberOfObsoleteTermNotations>0</numberOfObsoleteTermNotations>
+      </report>
+      <report date="2024-08-15">
+         <numberOfTermTopics>36</numberOfTermTopics>
+         <numberOfLanguages>3</numberOfLanguages>
+         <numberOfPreferredTermNotations>85</numberOfPreferredTermNotations>
+         <numberOfAdmittedTermNotations>7</numberOfAdmittedTermNotations>
+         <numberOfNotRecommendedTermNotations>29</numberOfNotRecommendedTermNotations>
+         <numberOfObsoleteTermNotations>0</numberOfObsoleteTermNotations>
+      </report>
+   </chronologicalStatistics>
+</termstats>

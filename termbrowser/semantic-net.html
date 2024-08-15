@@ -1,0 +1,499 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="26.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="DC.rights.owner" content="(C) Copyright 2024"/><meta name="copyright" content="(C) Copyright 2024"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="semanticnet"/><meta name="description" content="The semantic net visualizes the relations between the terms."/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="ui_qlt_xb4_hy"/>        
+      <title>Semantic Net</title><!--  Generated with Oxygen version 26.0, build number 2023100622.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="ui_qlt_xb4_hy-d405e470"/><meta name="wh-source-relpath" content="semantic-net.dita"/><meta name="wh-out-relpath" content="semantic-net.html"/>
+
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/commons.css?buildId=2023100622"/>
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic.css?buildId=2023100622"/>
+
+    <script src="./oxygen-webhelp/app/options/properties.js?buildId=20240815083159"></script>
+    <script src="./oxygen-webhelp/app/localization/strings.js?buildId=2023100622"></script>
+    <script src="./oxygen-webhelp/app/search/index/keywords.js?buildId=20240815083159"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/commons.js?buildId=2023100622"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/topic.js?buildId=2023100622"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/css/stefan-jung.css?buildId=2023100622"/><!-- JQuery and JQuery UI -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"/>
+    
+<!-- Bootstrap -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"/>-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
+    
+<!-- flag-icon is used to render country flags in the terminology entry topics -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+
+<!-- vis.js is used to render the terminology semantic net -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.6/standalone/umd/vis-network.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet"/>
+
+<!--
+    chart.js
+    
+    chart.js is used to render the terminology statistics.
+    
+    The Oxygen Webhelp plugin is using require.js for asynchronous loading of JavaScript libraries.
+    The main benefit is, that the page is loaded and rendered while the JavaScript libraries are loaded.
+    The "normal way" is, that all CSS/JS libraries are loaded BEFORE the HTML content is rendered.
+    This slows down the rendering of the website.
+    
+    require.js can load only AMD modules, so be sure to require one of the UMD builds.
+    In order to use the time scale, you need to make sure one of the available date adapters and 
+    corresponding date library are fully loaded after requiring chart.js.
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"/>
+</head>
+
+    <body id="ui_qlt_xb4_hy" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        <div class="logos">
+    <div class="logo">
+        <a class="semantic-net-header-link" href="semantic-net.html">Semantic Net</a>
+    </div>
+    <div class="logo">
+        <a class="termstats-header-link" href="termstats.html">Terminology Statistics</a>
+    </div>
+</div>
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="index.html" class=" wh_logo d-none d-sm-block "><img src="oxygen-webhelp\template\logo/stefan-jung-logo.svg" alt="Termbrowser"/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="title">Termbrowser</span></a></div>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li class="active"><div class="topicref" data-id="ui_qlt_xb4_hy"><div class="title"><a href="semantic-net.html">Semantic Net</a><div class="wh-tooltip"><p class="shortdesc">The semantic net visualizes the relations between the terms.</p></div></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div class="col-12" id="wh_topic_body">
+                        
+                        
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic concept/concept semanticnet/semanticnet topic concept semanticnet" role="article" aria-labelledby="ariaid-title1">
+  <h1 class="- topic/title title topictitle1" id="ariaid-title1">Semantic Net</h1>
+  
+  <div class="- topic/body concept/conbody body conbody"><p class="- topic/shortdesc shortdesc">The semantic net visualizes the relations between the terms.</p>
+    <ul class="- topic/ul ul">
+      <li class="- topic/li li">Use the mouse wheel to zoom in or out.</li>
+      <li class="- topic/li li">Keep the left mouse button pressed and move the mouse to shift the semantic net.</li>
+      <li class="- topic/li li">Click a term node to select it. Its definition is displayed in the legend below the semantic net.</li>
+    </ul>
+    <div id="search"><div class="form"><div class="form-group row"><label for="search-input" class="col-form-label">Term Notation</label><input id="search-input" class="form-control autocomplete" type="text"/><button type="button" class="btn btn-default semantic-search-button" onclick="termFocus(document.getElementById('search-input').value.toLowerCase());">Search</button></div></div></div><div id="wrapper"><div id="mynetwork"><div class="vis network-frame" style="position: relative; overflow: hidden; user-select: none; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;"><canvas width="960" height="540" style="position: relative; user-select: none; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;"></canvas></div></div><div id="loadingBar"><div class="outerBorder"><div id="text">0%</div><div id="border"><div id="bar"></div></div></div></div></div><div id="legend"><table class="table table-striped table-bordered table-hover table-condensed"><tr><td class="legend_col1">Term</td><td class="legend_col2"><div id="t_term"><a id="term-link"></a></div></td></tr><tr><td class="legend_col1">Definition</td><td class="legend_col2"><div id="t_definition"></div></td></tr></table></div><script type="text/javascript">
+            
+            var nodes = null;
+            var edges = null;
+            var network = null;
+            
+            nodes = [
+  
+  
+    {id: 'advanceddriverassistancesystem', group: 'term', label: 'Advanced driver assistance systems'}, 
+    {id: 'antilockbrakingsystem', group: 'term', label: 'Anti-lock breaking system'}, 
+    {id: 'axle', group: 'term', label: 'Axle'}, 
+    {id: 'beetle', group: 'term', label: 'Volkswagen Beetle'}, 
+    {id: 'brakelight', group: 'term', label: 'Brake Light'}, 
+    {id: 'bus', group: 'term', label: 'Bus'}, 
+    {id: 'car', group: 'term', label: 'Car'}, 
+    {id: 'chassis', group: 'term', label: 'Chassis'}, 
+    {id: 'classbmotorhome', group: 'term', label: 'Class B motorhome'}, 
+    {id: 'classbplusmotorhome', group: 'term', label: 'Class B+ motorhome'}, 
+    {id: 'classcmotorhome', group: 'term', label: 'Class C motorhome'}, 
+    {id: 'coachwork', group: 'term', label: 'Coachwork (vehicle body)'}, 
+    {id: 'dieselengine', group: 'term', label: 'Diesel engine'}, 
+    {id: 'electronicstabilitycontrol', group: 'term', label: 'Electronic stability control'}, 
+    {id: 'engine', group: 'term', label: 'Engine'}, 
+    {id: 'exhaustsystem', group: 'term', label: 'Exhaust system'}, 
+    {id: 'gasengine', group: 'term', label: 'Gas engine'}, 
+    {id: 'headlamp', group: 'term', label: 'Headlamp'}, 
+    {id: 'internalcombustionengine', group: 'term', label: 'Internal combustion engine'}, 
+    {id: 'kaessbohrersetras110h', group: 'term', label: 'Kässbohrer Setra S 110 H'}, 
+    {id: 'ladderframe', group: 'term', label: 'Ladder frame'}, 
+    {id: 'lighting', group: 'term', label: 'Lighting'}, 
+    {id: 'motorcycle', group: 'term', label: 'Motorcycle'}, 
+    {id: 'motorhome', group: 'term', label: 'Motorhome'}, 
+    {id: 'motorvehicle', group: 'term', label: 'Motor vehicle'}, 
+    {id: 'petrolengine', group: 'term', label: 'Petrol engine (spark-ignition)'}, 
+    {id: 'powertrain', group: 'term', label: 'Powertrain'}, 
+    {id: 'rearfoglamp', group: 'term', label: 'Rear fog lamp'}, 
+    {id: 'rearpositionlamp', group: 'term', label: 'Rear position lamp'}, 
+    {id: 'reversinglamp', group: 'term', label: 'Reversing lamp'}, 
+    {id: 'transmission', group: 'term', label: 'Transmission'}, 
+    {id: 'truck', group: 'term', label: 'Truck'}, 
+    {id: 'turnsignal', group: 'term', label: 'Turn signal'}, 
+    {id: 'unitizedbody', group: 'term', label: 'Unitized body'}, 
+    {id: 'vehicle', group: 'term', label: 'Vehicle'}, 
+    {id: 'wheel', group: 'term', label: 'Wheel'} 
+  
+  
+  
+  
+];
+            edges = [
+  
+  
+    
+    
+    {id: 'chassisaxle', from: 'chassis', to : 'axle', arrows: 'to', label: 'is superordinate concept of'}, 
+    
+    {id: 'lightingbrakelight', from: 'lighting', to : 'brakelight', arrows: 'to', label: 'is part of'}, 
+    {id: 'truckbus', from: 'truck', to : 'bus', arrows: 'to', label: 'is related to'}, {id: 'carbus', from: 'car', to : 'bus', arrows: 'to', label: 'is related to'}, 
+    {id: 'truckcar', from: 'truck', to : 'car', arrows: 'to', label: 'is related to'}, 
+    {id: 'buschassis', from: 'bus', to : 'chassis', arrows: 'to', label: 'is part of'}, {id: 'carchassis', from: 'car', to : 'chassis', arrows: 'to', label: 'is part of'}, {id: 'coachworkchassis', from: 'coachwork', to : 'chassis', arrows: 'to', label: 'is related to'}, 
+    {id: 'motorhomeclassbmotorhome', from: 'motorhome', to : 'classbmotorhome', arrows: 'to', label: 'is superordinate concept of'}, {id: 'classbplusmotorhomeclassbmotorhome', from: 'classbplusmotorhome', to : 'classbmotorhome', arrows: 'to', label: 'is related to'}, 
+    {id: 'motorhomeclassbplusmotorhome', from: 'motorhome', to : 'classbplusmotorhome', arrows: 'to', label: 'is superordinate concept of'}, {id: 'classcmotorhomeclassbplusmotorhome', from: 'classcmotorhome', to : 'classbplusmotorhome', arrows: 'to', label: 'is related to'}, 
+    {id: 'motorhomeclasscmotorhome', from: 'motorhome', to : 'classcmotorhome', arrows: 'to', label: 'is superordinate concept of'}, {id: 'classbplusmotorhomeclasscmotorhome', from: 'classbplusmotorhome', to : 'classcmotorhome', arrows: 'to', label: 'is related to'}, 
+    {id: 'truckcoachwork', from: 'truck', to : 'coachwork', arrows: 'to', label: 'is part of'}, {id: 'chassiscoachwork', from: 'chassis', to : 'coachwork', arrows: 'to', label: 'is related to'}, 
+    {id: 'internalcombustionenginedieselengine', from: 'internalcombustionengine', to : 'dieselengine', arrows: 'to', label: 'is superordinate concept of'}, {id: 'busdieselengine', from: 'bus', to : 'dieselengine', arrows: 'to', label: 'is part of'}, {id: 'cardieselengine', from: 'car', to : 'dieselengine', arrows: 'to', label: 'is part of'}, {id: 'truckdieselengine', from: 'truck', to : 'dieselengine', arrows: 'to', label: 'is part of'}, 
+    
+    {id: 'internalcombustionengineengine', from: 'internalcombustionengine', to : 'engine', arrows: 'to', label: 'is subordinate concept of'}, {id: 'truckengine', from: 'truck', to : 'engine', arrows: 'to', label: 'is part of'}, {id: 'carengine', from: 'car', to : 'engine', arrows: 'to', label: 'is part of'}, 
+    {id: 'internalcombustionengineexhaustsystem', from: 'internalcombustionengine', to : 'exhaustsystem', arrows: 'to', label: 'is part of'}, 
+    {id: 'internalcombustionenginegasengine', from: 'internalcombustionengine', to : 'gasengine', arrows: 'to', label: 'is superordinate concept of'}, 
+    {id: 'lightingheadlamp', from: 'lighting', to : 'headlamp', arrows: 'to', label: 'is part of'}, 
+    {id: 'engineinternalcombustionengine', from: 'engine', to : 'internalcombustionengine', arrows: 'to', label: 'is superordinate concept of'}, {id: 'gasengineinternalcombustionengine', from: 'gasengine', to : 'internalcombustionengine', arrows: 'to', label: 'is subordinate concept of'}, {id: 'dieselengineinternalcombustionengine', from: 'dieselengine', to : 'internalcombustionengine', arrows: 'to', label: 'is subordinate concept of'}, {id: 'petrolengineinternalcombustionengine', from: 'petrolengine', to : 'internalcombustionengine', arrows: 'to', label: 'is subordinate concept of'}, 
+    
+    {id: 'unitizedbodyladderframe', from: 'unitizedbody', to : 'ladderframe', arrows: 'to', label: 'is antonym of'}, {id: 'chassisladderframe', from: 'chassis', to : 'ladderframe', arrows: 'to', label: 'is subordinate concept of'}, 
+    
+    
+    {id: 'classbmotorhomemotorhome', from: 'classbmotorhome', to : 'motorhome', arrows: 'to', label: 'is subordinate concept of'}, {id: 'classbplusmotorhomemotorhome', from: 'classbplusmotorhome', to : 'motorhome', arrows: 'to', label: 'is subordinate concept of'}, 
+    {id: 'vehiclemotorvehicle', from: 'vehicle', to : 'motorvehicle', arrows: 'to', label: 'is superordinate concept of'}, {id: 'truckmotorvehicle', from: 'truck', to : 'motorvehicle', arrows: 'to', label: 'is subordinate concept of'}, {id: 'busmotorvehicle', from: 'bus', to : 'motorvehicle', arrows: 'to', label: 'is subordinate concept of'}, {id: 'carmotorvehicle', from: 'car', to : 'motorvehicle', arrows: 'to', label: 'is subordinate concept of'}, 
+    {id: 'internalcombustionenginepetrolengine', from: 'internalcombustionengine', to : 'petrolengine', arrows: 'to', label: 'is superordinate concept of'}, {id: 'carpetrolengine', from: 'car', to : 'petrolengine', arrows: 'to', label: 'is part of'}, {id: 'dieselenginepetrolengine', from: 'dieselengine', to : 'petrolengine', arrows: 'to', label: 'is related to'}, 
+    
+    {id: 'lightingrearfoglamp', from: 'lighting', to : 'rearfoglamp', arrows: 'to', label: 'is part of'}, 
+    {id: 'lightingrearpositionlamp', from: 'lighting', to : 'rearpositionlamp', arrows: 'to', label: 'is part of'}, 
+    {id: 'lightingreversinglamp', from: 'lighting', to : 'reversinglamp', arrows: 'to', label: 'is part of'}, 
+    {id: 'powertraintransmission', from: 'powertrain', to : 'transmission', arrows: 'to', label: 'is superordinate concept of'}, 
+    {id: 'cartruck', from: 'car', to : 'truck', arrows: 'to', label: 'is related to'}, 
+    {id: 'lightingturnsignal', from: 'lighting', to : 'turnsignal', arrows: 'to', label: 'is part of'}, 
+    {id: 'ladderframeunitizedbody', from: 'ladderframe', to : 'unitizedbody', arrows: 'to', label: 'is antonym of'}, {id: 'chassisunitizedbody', from: 'chassis', to : 'unitizedbody', arrows: 'to', label: 'is superordinate concept of'}, 
+    {id: 'motorvehiclevehicle', from: 'motorvehicle', to : 'vehicle', arrows: 'to', label: 'is subordinate concept of'}, 
+    
+  
+  
+  
+  
+];
+            
+            var container = document.getElementById('mynetwork');
+            
+            var data = {
+                nodes: nodes,
+                edges: edges
+            };
+            
+            var options = {
+                interaction: {
+                    hover: true
+                },
+                edges: {
+                    width: 1,
+                    arrows: 'to',
+                    color: '#5a6e82'
+                },
+                layout: {
+                    improvedLayout: true
+                },
+                physics: {
+                    forceAtlas2Based: {
+                        gravitationalConstant: -50,
+                        centralGravity: 0.01,
+                        springLength: 100,
+                        springConstant: 0.08
+                    },
+                    maxVelocity: 50,
+                    solver: 'forceAtlas2Based',
+                    timestep: 0.35,
+                    stabilization: {
+                        enabled: true,
+                        iterations: 1000,
+                        updateInterval: 50
+                    }
+                },
+                groups: {
+                    term: {
+                        borderWidth: '1',
+                        borderWidthSelected: '2',
+                        radius: 1500,
+                        color: {
+                            border: '#96c3ff',
+                            background: '#96c3ff',
+                            hover: {
+                                border: '2',
+                                background: '#96c3ff',
+                            },
+                            highlight: {
+                                border: '#1471bb',
+                                background: '#96c3ff',
+                            }
+                        },
+                        font: {
+                            color: '#323c46',
+                            size: 9,
+                            face: 'Arial, sans-serif'
+                        },
+                        shape: 'box'
+                    }
+                }
+            };
+                            
+            var network = new vis.Network(container, data, options);
+             
+            network.on("stabilizationProgress", function(params) {
+                var maxWidth = 496;
+                var minWidth = 20;
+                var widthFactor = params.iterations/params.total;
+                var width = Math.max(minWidth,maxWidth * widthFactor);
+                document.getElementById('bar').style.width = width + 'px';
+                document.getElementById('text').innerHTML = Math.round(widthFactor * 100) + '%';
+            });
+             
+            network.once("stabilizationIterationsDone", function() {
+                document.getElementById('text').innerHTML = '100%';
+                document.getElementById('bar').style.width = '496px';
+                document.getElementById('loadingBar').style.opacity = 0;
+                setTimeout(function() {
+                    document.getElementById('loadingBar').style.display = 'none';
+                }, 500);
+            });
+             
+            network.on('click', function(params) {
+                if (!(params.nodes == 0)) {
+                    loadTerm(params.nodes);
+                }
+            });
+                 
+            var terms = [
+  
+  
+    {key: 'advanceddriverassistancesystem', term: 'Advanced driver assistance systems', definition: 'Advanced Driver Assistance Systems are systems to help the driver in the driving process. When designed with a safe Human-Machine Interface, they should increase car safety and more generally road safety.', href: 'advancedDriverAssistanceSystem.html'}, 
+    {key: 'antilockbrakingsystem', term: 'Anti-lock breaking system', definition: 'An anti-lock braking system is an automobile safety system that allows the wheels on a motor vehicle to maintain tractive contact with the road surface according to driver inputs while braking, preventing the wheels from locking up (ceasing rotation) and avoiding uncontrolled skidding.', href: 'antiLockBrakingSystem.html'}, 
+    {key: 'axle', term: 'Axle', definition: 'An axle is a central shaft for a rotating wheel or gear.', href: 'axle.html'}, 
+    {key: 'beetle', term: 'Volkswagen Beetle', definition: 'The Volkswagen Beetle is a two-door, four passenger, rear-engine economy car manufactured and marketed by German automaker Volkswagen (VW) from 1938 until 2003.', href: 'beetle.html'}, 
+    {key: 'brakelight', term: 'Brake Light', definition: 'Red steady-burning rear lights, brighter than the rear position lamps, are activated when the driver applies the vehicle\'s brakes. They are required to be fitted in multiples of two, symmetrically at the left and right edges of the rear of every vehicle.', href: 'brakeLight.html'}, 
+    {key: 'bus', term: 'Bus', definition: 'A bus is a road vehicle designed to carry many passengers.', href: 'bus.html'}, 
+    {key: 'car', term: 'Car', definition: 'A car is a wheeled, self-powered motor vehicle used for transportation.', href: 'car.html'}, 
+    {key: 'chassis', term: 'Chassis', definition: 'A chassis consists of an internal vehicle frame that supports a manmade object in its construction and use.', href: 'chassis.html'}, 
+    {key: 'classbmotorhome', term: 'Class B motorhome', definition: 'Built using a conventional van, to which either a raised roof has been added or the back replaced by a low-profile body (aka coach-built).', href: 'classBMotorHome.html'}, 
+    {key: 'classbplusmotorhome', term: 'Class B+ motorhome', definition: 'Class B+ motorhomes are either built on a truck or van chassis. They usually include a \"cab-over\" section.', href: 'classBPlusMotorHome.html'}, 
+    {key: 'classcmotorhome', term: 'Class C motorhome', definition: 'A Class C motorhome is built upon a minimal truck platform with a forward engine and transmission connected by driveshaft to a rear axle that propels dual-mounted rear wheels.', href: 'classCMotorHome.html'}, 
+    {key: 'coachwork', term: 'Coachwork (vehicle body)', definition: 'Coachwork is the body of a motor vehicle (automobile, van, bus or truck), a horse-drawn coach or carriage (whence the term originated, derived from the Hungarian town of Kocs),[1] or, by extension, a railroad car or railway carriage.', href: 'coachwork.html'}, 
+    {key: 'dieselengine', term: 'Diesel engine', definition: 'The diesel engine (also known as a compression-ignition or CI engine) is an internal combustion engine in which ignition of the fuel that has been injected into the combustion chamber is caused by the high temperature which a gas achieves when greatly compressed (adiabatic compression).', href: 'dieselEngine.html'}, 
+    {key: 'electronicstabilitycontrol', term: 'Electronic stability control', definition: 'Electronic stability control is a computerized technology that improves a vehicle\'s stability by detecting and reducing loss of traction (skidding).', href: 'electronicStabilityControl.html'}, 
+    {key: 'engine', term: 'Engine', definition: 'An engine is a machine designed to convert one form of energy into mechanical energy.', href: 'engine.html'}, 
+    {key: 'exhaustsystem', term: 'Exhaust system', definition: 'An exhaust system is usually piping used to guide reaction exhaust gases away from a controlled combustion inside an engine or stove. The entire system conveys burnt gases from the engine and includes one or more exhaust pipes.', href: 'exhaustSystem.html'}, 
+    {key: 'gasengine', term: 'Gas engine', definition: 'A gas engine is an internal combustion engine which runs on a gas fuel, such as coal gas, producer gas, biogas, landfill gas or natural gas.', href: 'gasengine.html'}, 
+    {key: 'headlamp', term: 'Headlamp', definition: 'A headlamp is a lamp attached to the front of a vehicle to light the road ahead.', href: 'headlamp.html'}, 
+    {key: 'internalcombustionengine', term: 'Internal combustion engine', definition: 'An internal combustion engine is a heat engine where the combustion of a fuel occurs with an oxidizer (usually air) in a combustion chamber that is an integral part of the working fluid flow circuit.', href: 'internalCombustionEngine.html'}, 
+    {key: 'kaessbohrersetras110h', term: 'Kässbohrer Setra S 110 H', definition: 'The Kässbohrer Setra S 110 H is a bus, 43 passenger, rear-engine person transportation vehicle (bus) manufactured and marketed by German automaker Kässboher Wagenfabrik Kässbohrer in Ulm, Germany in 1959 until 2003.', href: 'kaessbohrerSetraS110H.html'}, 
+    {key: 'ladderframe', term: 'Ladder frame', definition: 'So named for its resemblance to a ladder, the ladder frame is one of the simplest and oldest of all vehicle frame designs.', href: 'ladderFrame.html'}, 
+    {key: 'lighting', term: 'Lighting', definition: 'Lighting or illumination is the deliberate use of light to achieve a practical or aesthetic effect. Lighting includes the use of both artificial light sources like lamps and light fixtures, as well as natural illumination by capturing daylight. The term lightning system include all necessary parts to provide the vehicle lightning.', href: 'lighting.html'}, 
+    {key: 'motorcycle', term: 'Motorcycle', definition: 'A motorcycle is a two- or three-wheeled motor vehicle. Motorcycle design varies greatly to suit a range of different purposes: long distance travel, commuting, cruising, sport including racing, and off-road riding.', href: 'motorCycle.html'}, 
+    {key: 'motorhome', term: 'Motorhome', definition: 'A motorhome (or motor coach) is a type of self-propelled recreational vehicle or RV which offers living accommodation combined with a vehicle engine.', href: 'motorHome.html'}, 
+    {key: 'motorvehicle', term: 'Motor vehicle', definition: 'A motor vehicle is a self-propelled road vehicle and off-road vehicle, commonly wheeled, that does not operate on rails, such as trains or trams and used for commercial purposes on the highways in the transportation of passengers, or passengers and property.', href: 'motorVehicle.html'}, 
+    {key: 'petrolengine', term: 'Petrol engine (spark-ignition)', definition: 'A petrol engine (known as a gasoline engine in American English) is an internal combustion engine with spark-ignition, designed to run on petrol (gasoline) and similar volatile fuels.', href: 'petrolEngine.html'}, 
+    {key: 'powertrain', term: 'Powertrain', definition: 'In a motor vehicle, the term powertrain or powerplant describes the main components that generate power and deliver it to the road surface, water, or air. This includes the engine, transmission, drive shafts, differentials, and the final drive (drive wheels, continuous track as in military tanks or caterpillar tractors, propeller, etc.).', href: 'powertrain.html'}, 
+    {key: 'rearfoglamp', term: 'Rear fog lamp', definition: 'In Europe and other countries adhering to UN Regulation 48, vehicles must be equipped with one or two bright red \"rear fog lamps\", which serve as high-intensity rear position lamps to be turned on by the driver in conditions of poor visibility to make the vehicle more visible from the rear.', href: 'rearFogLamp.html'}, 
+    {key: 'rearpositionlamp', term: 'Rear position lamp', definition: 'Conspicuity for the rear of a vehicle is provided by rear position lamps. These are required to produce only red light and to be wired such that they are lit whenever the front position lamps are lit, including when the headlamps are on. Rear position lamps may be combined with the vehicle\'s stop lamps or separate from them.', href: 'rearPositionLamp.html'}, 
+    {key: 'reversinglamp', term: 'Reversing lamp', definition: 'To warn adjacent vehicle operators and pedestrians of a vehicle\'s rearward motion, and to provide illumination to the rear when backing up, each vehicle must be equipped with one or two rear-mounted, rear-facing reversing lamps.', href: 'reversingLamp.html'}, 
+    {key: 'transmission', term: 'Transmission', definition: 'A transmission is a machine in a power transmission system, which provides controlled application of the power. Often the term transmission refers simply to the gearbox that uses gears and gear trains to provide speed and torque conversions from a rotating power source to another device.', href: 'transmission.html'}, 
+    {key: 'truck', term: 'Truck', definition: 'A truck is a motor vehicle designed to transport cargo.', href: 'truck.html'}, 
+    {key: 'turnsignal', term: 'Turn signal', definition: 'Turn signals are blinking lamps mounted near the left and right front and rear corners of a vehicle, and sometimes on the sides, activated by the driver on one side of the vehicle at a time to advertise intent to turn or change lanes towards that side.', href: 'turnSignal.html'}, 
+    {key: 'unitizedbody', term: 'Unitized body', definition: 'The term unibody or unit body is short for unitized body, or alternatively unitary construction design. This engineering approach of a vehicle describes \"of a vehicle, a one-piece frame and body structure\" A \"type of body/frame construction in which the body of the vehicle, its floor plan and chassis form a single structure.', href: 'unitizedBody.html'}, 
+    {key: 'vehicle', term: 'Vehicle', definition: 'A vehicle is a mobile machine that transports people or cargo.', href: 'vehicle.html'}, 
+    {key: 'wheel', term: 'Wheel', definition: 'A wheel is a circular component that is intended to rotate on an axle bearing.', href: 'wheel.html'}, 
+  
+  
+  
+  
+];
+            
+            function loadTerm(key) {
+                var result = terms.filter(function(obj) {
+                    return obj.key == key;
+                });
+                var node = document.createElement("a");
+                var textnode = document.createTextNode(result[0].term);
+                node['href'] = result[0].href;
+                node['target'] = '_self';
+                node.appendChild(textnode);
+                
+                var termContainer = document.getElementById("t_term");
+                while (termContainer.firstChild) {
+                    termContainer.removeChild(termContainer.firstChild);
+                }
+                termContainer.appendChild(node);
+                document.getElementById("t_definition").textContent = result[0].definition;
+            }
+            
+            document.addEventListener("DOMContentLoaded", function() {
+                var data = [
+  
+  
+    'Advanced driver assistance systems', 
+    'Anti-lock breaking system', 
+    'Axle', 
+    'Volkswagen Beetle', 
+    'Brake Light', 
+    'Bus', 
+    'Car', 
+    'Chassis', 
+    'Class B motorhome', 
+    'Class B+ motorhome', 
+    'Class C motorhome', 
+    'Coachwork (vehicle body)', 
+    'Diesel engine', 
+    'Electronic stability control', 
+    'Engine', 
+    'Exhaust system', 
+    'Gas engine', 
+    'Headlamp', 
+    'Internal combustion engine', 
+    'Kässbohrer Setra S 110 H', 
+    'Ladder frame', 
+    'Lighting', 
+    'Motorcycle', 
+    'Motorhome', 
+    'Motor vehicle', 
+    'Petrol engine (spark-ignition)', 
+    'Powertrain', 
+    'Rear fog lamp', 
+    'Rear position lamp', 
+    'Reversing lamp', 
+    'Transmission', 
+    'Truck', 
+    'Turn signal', 
+    'Unitized body', 
+    'Vehicle', 
+    'Wheel' 
+  
+  
+  
+  
+];
+                $( "#search-input" ).autocomplete({source: data});
+            });
+            
+            /* Found on https://stackoverflow.com/a/2970667 */
+            function camelize(str) {
+                return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function(word, index) {
+                    return index === 0 ? word.toLowerCase() : word.toUpperCase();
+                }).replace(/\s+/g, '');
+            }
+            
+            function termFocus(term) {
+                console.log("termFocus");
+                var t = "TRM_" + camelize(term);
+                network.fit();
+                var focusOptions = {
+                    scale: 0.7,
+                    locked: 'false',
+                    animation: {
+                        duration: 10,
+                        easingFunction: 'easeInQuad'
+                    }
+                };
+                network.focus(t, focusOptions);
+                network.selectNodes([t])
+            }
+
+        </script>
+  </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div class="webhelp.fragment.footer">
+    <p>Termbrowser generated with <a href="https://github.com/stefan-jung/org.jung.terminology">org.jung.terminology</a></p>
+</div>
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        
+    </body>
+</html>
