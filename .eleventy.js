@@ -132,6 +132,9 @@ module.exports = eleventyConfig => {
 
   // Copy the entire dita-introduction website
   eleventyConfig.addPassthroughCopy('src/dita-introduction/');
+  
+  // Copy the entire termbrowser website
+  eleventyConfig.addPassthroughCopy('src/termbrowser/');
 
   // 	--------------------- general config -----------------------
   return {
