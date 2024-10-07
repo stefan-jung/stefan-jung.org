@@ -1,13 +1,13 @@
 ---
 title: Terminology plugin
 permalink: /plugins/terminology.html
-description: Plugin for managing terminology with DITA
+description: Terminology management solution for DITA/Oxygen authoring environments
 layout: page
 eleventyNavigation:
   key: plugin-terminology
   parent: plugins
   title: Terminology plugin
-  excerpt: DITA-OT plugin for creating a DITA-based terminology database
+  excerpt: Terminology management solution for DITA/Oxygen authoring environments
 preloads:
   href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
   as: 'font'
@@ -20,7 +20,58 @@ preloads:
 Parent: <a class="crumb" href="{{ crumb.url | url }}">{{ crumb.title }}</a>
 {% endfor %}
 
-[org.jung.terminology](https://github.com/stefan-jung/org.jung.terminology) is a plugin for the [DITA-OT](http://dita-ot.github.io/) for creating a DITA-based terminology database. The plugin ships specialized DITA Topics and DITA Maps, such as the **`<termentry>`** topic type. The **`<termentry>`** represents a single terminology concept and contains all metadata and all linguistic information of the terminology concept in all languages. **`<termentry>`** topics are not meant to be used or reused in a normal DITA project, they are just used for storing the terminology. It is possible to generate a terminology browser from your **`<termentry>`** topics, which allows others to navigate to your terminology. You will find several examples in the `samples` directory of the plugin.
+[org.jung.terminology](https://github.com/stefan-jung/org.jung.terminology) is a full-blown terminology management solution for DITA/Oxygen XML authoring environments. Technically speaking it's a plugin for the [Oxygen Publishing Engine](https://www.oxygenxml.com/publishing_engine.html) and the [DITA-OT](http://dita-ot.github.io/). The plugin ships the specialized **`<termentry>`** topic type and a few others. The **`<termentry>`** represents a single terminology concept and contains all metadata and all linguistic information of the terminology concept in all languages.
+
+Creating a **`<termentry>`** topic is as easy as creating a normal DITA topic. The plugin ships also a comprehensive Oxygen XML framework for authoring. The following picture shows, how a **`<termentry>`** topic is rendered in the Oxygen XML Author view.
+
+![Termentry topic in Oxygen XML author view](../assets/images/termentry.png)
+
+This is the underlying XML structure.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:jung:dita:rng:termentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:jung:dita:rng:termentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<termentry id="car">
+ <title>Car</title>
+ <definition>
+  <definitionText>A car is a wheeled, self-powered motor vehicle used for transportation.</definitionText>
+  <definitionSource>
+   <sourceReference href="https://en.wikipedia.org/wiki/Car" format="html" scope="external"
+    >Wikipedia</sourceReference>
+  </definitionSource>
+ </definition>
+ <termBody>
+  <fig>
+   <title>2015 Volkswagen Passat (3G MY16) 132TSI</title>
+   <image href="https://upload.wikimedia.org/wikipedia/commons/7/78/2015_Volkswagen_Passat_%283G_MY16%29_132TSI_station_wagon_%282015-11-11%29_01.jpg" scope="external" width="600px">
+    <alt>By OSX (Own work) [Public domain], via Wikimedia Commons</alt>
+   </image>
+  </fig>
+  <domains>
+   <domain concept-domain="Car"/>
+  </domains>
+  <partOfSpeech/>
+  <fullForm usage="preferred" language="en-GB">
+   <termVariant xml:lang="en-GB">car</termVariant>
+  </fullForm>
+  <fullForm usage="notRecommended" language="de-DE">
+   <termVariant xml:lang="de-DE">Automobil</termVariant>
+  </fullForm>
+  <abbreviation usage="preferred" language="de-DE">
+   <termVariant xml:lang="de-DE">Auto</termVariant>
+  </abbreviation>
+ </termBody>
+ <relations>
+  <relatedTerms>
+   <relatedTerm keyref="truck"/>
+  </relatedTerms>
+ </relations>
+</termentry>
+``````
+
+
+ **`<termentry>`** topics are not meant to be used or reused in a normal DITA project, they are just used for storing the terminology. It is possible to generate a terminology browser from your **`<termentry>`** topics, which allows others to navigate to your terminology. You will find several examples in the `samples` directory of the plugin.
 
 If you have found a bug or want to request a feature, please raise an [issue](https://github.com/stefan-jung/org.jung.terminology/issues).
 
@@ -30,6 +81,7 @@ Main Features
 
 * Create and change terms easily using specialized DITA topics. The new DITA `<termentry>` topic represents a single terminology concept. Terminology concepts are linked together to a terminology database using the new DITA `<termmap>` map.
 * Author terminology concepts easily using an <oXygen/> XML framework, which is providing author mode stylesheets, which simplify the editing of `<termentry>` and `<termmap>` topics and maps.
+* Terminology Harvester, to harvest terms from translation memories (.tmx) or XLIFF files (.xlf or .xliff).
 
 **Quick Start Presentation**: Recorded by [Syncro Soft/OxygenXML Editor](https://www.oxygenxml.com/about_us.html), DITA-OT Day 2016, Munich
 
