@@ -26,8 +26,7 @@ Creating a **`<termentry>`** topic is as easy as creating a normal DITA topic. T
 
 ![Termentry topic in Oxygen XML author view](../assets/images/termentry.png)
 
-This is the underlying XML structure.
-
++++ **Example:** car.dita **`<termentry>`** topic
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="urn:jung:dita:rng:termentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
@@ -68,7 +67,10 @@ This is the underlying XML structure.
   </relatedTerms>
  </relations>
 </termentry>
-``````
+```
++++
+
+
 
 
  **`<termentry>`** topics are not meant to be used or reused in a normal DITA project, they are just used for storing the terminology. It is possible to generate a terminology browser from your **`<termentry>`** topics, which allows others to navigate to your terminology. You will find several examples in the `samples` directory of the plugin.
@@ -124,8 +126,12 @@ The clear solution is of course to prepare a terminological concept before the f
 
 The Terminology Harvester is crawling through translation memories and XLIFF files and is extracting translated terms as **`<termentry>`** topics, `.csv`, or `.txt` files. The Terminology Harvester intentionally only checks the segments in which the term being searched for occurs exclusively. Segments in which the term is embedded in a sentence structure are deliberately ignored.
 
-![Terminology Harvester principle](../../src/assets/images/termharvester-principle.drawio.png)
-  
+![Terminology Harvester principle](../assets/images/termharvester-principle.drawio.png)
+
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
+
+
 
 Installation
 ============
