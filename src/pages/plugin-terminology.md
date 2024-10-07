@@ -73,7 +73,8 @@ This is the underlying XML structure.
 
  **`<termentry>`** topics are not meant to be used or reused in a normal DITA project, they are just used for storing the terminology. It is possible to generate a terminology browser from your **`<termentry>`** topics, which allows others to navigate to your terminology. You will find several examples in the `samples` directory of the plugin.
 
-> **NOTE** If you have found a bug or want to request a feature, please raise an [issue](https://github.com/stefan-jung/org.jung.terminology/issues).
+> <i class="fas fa-circle-info"></i> **INFO** If you have found a bug or want to request a feature, please raise a <i class="fa-brands fa-github"></i> [GitHub issue](https://github.com/stefan-jung/org.jung.terminology/issues).
+
 
 
 Main Features
@@ -104,8 +105,6 @@ The termchecker is designed to search for not recommended terms in various data 
 *   [Termchecker DITA](/wiki/spaces/DOC/pages/40008098/Termchecker+DITA) — This page explains how to use the termchecker for DITA. The DITA Termchecker is technically a [Schematron](http://www.schematron.com/) file, that searches for not recommended terms and replaces them with preferred synonyms. It is recommended [add a new document type association](http://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/preferences-document-type-association.html) by extending the `DITA` framework and [create a new validatation scenario](https://www.oxygenxml.com/doc/versions/18/ug-editor/tasks/create-validation-scenario.html) using the termchecker DITA Schematron file.
     
 
-  
-
 TBX
 ---
 
@@ -114,8 +113,18 @@ TBX is a data format to exchange a terminology database, e.g. to pass it to your
 *   [TBX-Basic](/wiki/spaces/DOC/pages/40008215/TBX-Basic) — The transformation scenario `TBX-Basic` transforms the terminology to a [TBX-Basic](http://www.ttt.org/oscarstandards/tbx/tbx-basic.html) file. A TBX-Basic file is a lighter version of the Terminology Base Exchange (TBX) format. You can send this file to a language service provider to make sure, that the translator uses the correct terminology during translation.
     
 *   [TBX-Min](/wiki/spaces/DOC/pages/40008179/TBX-Min) — The transformation scenarios `TBX-Min` transforms the terminology to a TBX-Min file. The TBX-Min format is a dialect of the TermBase eXchange (TBX) format and is designed for bilingual or monolingual glossaries. You can use TBX-Min to transmit a terminology database to a language service provider (LSP). You can send this file to a language service provider to make sure, that the translator uses the correct terminology during translation. The TBX-Min format is explained in the paper [TBX - Min: A Simplified TBX - Based Approach to Representing Bilingual Glossaries](http://www.tbxinfo.net/wp-content/uploads/2016/10/lommel_melby_glenn_hayes_snow-final.pdf).
-    
 
+
+Terminology Harvester
+---------------------
+
+It is always a good idea to maintain and harmonize your translation memories and your terminology database. During this work, you will identify inconsistencies that you can map into your terminology using non-permissible terms and eliminate them in the long term.
+
+The clear solution is of course to prepare a terminological concept before the first translation and to clearly define the associated terms in all target languages. In practice, however, this is often not feasible and often not even desirable for economic reasons.
+
+The Terminology Harvester is crawling through translation memories and XLIFF files and is extracting translated terms as **`<termentry>`** topics, `.csv`, or `.txt` files. The Terminology Harvester intentionally only checks the segments in which the term being searched for occurs exclusively. Segments in which the term is embedded in a sentence structure are deliberately ignored.
+
+![Terminology Harvester principle](../../src/assets/images/termharvester-principle.drawio.png)
   
 
 Installation
