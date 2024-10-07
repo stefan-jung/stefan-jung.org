@@ -70,10 +70,7 @@ Creating a **`<termentry>`** topic is as easy as creating a normal DITA topic. T
 ```
 +++
 
-
-
-
- **`<termentry>`** topics are not meant to be used or reused in a normal DITA project, they are just used for storing the terminology. It is possible to generate a terminology browser from your **`<termentry>`** topics, which allows others to navigate to your terminology. You will find several examples in the `samples` directory of the plugin.
+> <i class="fa-solid fa-triangle-exclamation"></i> **CAUTION** **`<termentry>`** topics are not meant to be used or reused in a normal DITA project, they are just used for storing the terminology.
 
 > <i class="fas fa-circle-info"></i> **INFO** If you have found a bug or want to request a feature, please raise a <i class="fa-brands fa-github"></i> [GitHub issue](https://github.com/stefan-jung/org.jung.terminology/issues).
 
@@ -95,6 +92,14 @@ Termbrowser
 -----------
 
 The termbrowser is designed to browse through your terminology database. You can find an example generated from the provided sample files here: [stefanjung.netlify.app/termbrowser](https://stefanjung.netlify.app/termbrowser/). The termbrowser also contains a [semantic net](https://stefanjung.netlify.app/termbrowser/semantic-net/) and displays [statistics](https://stefanjung.netlify.app/termbrowser/semantic-net/termstats.html).
+
+
+<!--
+<video controls>
+  <source src="../assets/images/termbrowser.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+-->
 
 
 Termchecker

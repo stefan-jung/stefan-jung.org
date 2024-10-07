@@ -49,7 +49,8 @@ h3 {
 
 blockquote {
   border-inline-start: 0.8rem solid var(--color-primary);
-  padding: var(--space-m-l);
+  /* padding: var(--space-m-l); */
+  padding: 0.5em;
   font-size: var(--size-step-2);
 }
 
