@@ -233,10 +233,12 @@ This page explains how to use the termchecker for XLIFF. The Termchecker XLIFF (
 
 #### Parameters
 
-| Parameter             | Values                                       | Description                                                                                          |
-|-----------------------|----------------------------------------------|------------------------------------------------------------------------------------------------------|
-| `args.check.elements` | `source`, `target`, `both` Default: `source` | Choose whether terms should be checked only in source elements or target elements or in both of them |
-| `args.language`       | Example: `de-DE`                             | Language of the terminology check rules                                                              |
+`args.check.elements`
+: Choose whether terms should be checked only in source elements or target elements or in both of them. Possible values are `source`, `target`, `both`. Default value is `source`.
+
+`args.language`
+: This is the language of the terminology check rules, for instance `de-DE`.
+
 
 
 The DITA Termbrowser Responsive (format: `termbrowser-reponsive`) is a reponsive website for browsing through your terminology database.
@@ -252,10 +254,11 @@ If you want to publish the _termbrowser responsive_ via command line interface, 
 
 #### Parameters
 
-| Parameter               | Values                      | Description                                                                                                                                                                                                                                                                                                          |
-|-------------------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `args.default.language` | Example: `en-GB`            | Language used to generate the termbrowser labels.                                                                                                                                                                                                                                                                    |
-| `args.termstats`        | Example: `../termstats.xml` | Relative path to the terminology statistics (`termstats.xml` file). The `termstats.xml` file is automatically generated with each termbrowser publication. If you pass the `termstats.xml` from the previous build with this parameter, you can generate a&nbsp;chronological sequence of your terminology metadata. |
+`args.default.language`
+: Language used to generate the termbrowser labels, for instance `en-GB`.
+
+`args.termstats`
+: Relative path to the terminology statistics (`termstats.xml` file). The `termstats.xml` file is automatically generated with each termbrowser publication. If you pass the `termstats.xml` from the previous build with this parameter, you can generate a&nbsp;chronological sequence of your terminology metadata. Example: `../termstats.xml`
 
 
 #### Example
@@ -267,10 +270,12 @@ dita --input terminology.ditamap --format termbrowser-responsive -Dargs.default.
 
 The transformation scenarios `TBX-Min` transforms the terminology to a TBX-Min file. The TBX-Min format is a dialect of the TermBase eXchange (TBX) format and is designed for bilingual or monolingual glossaries. You can use TBX-Min to transmit a terminology database to a language service provider (LSP). You can send this file to a language service provider to make sure, that the translator uses the correct terminology during translation. The TBX-Min format is explained in the paper [TBX - Min: A Simplified TBX - Based Approach to Representing Bilingual Glossaries](http://www.tbxinfo.net/wp-content/uploads/2016/10/lommel_melby_glenn_hayes_snow-final.pdf).
 
-| Parameters | Values | Description |
-|------------|--------|-------------|
-| `args.source.language` | **Example**: `de-DE` (German/Germany) | Source language of terminology |
-| `args.target.language` | **Example**: `en-GB` (English/Great Britain) | Target language of terminology |
+
+`args.source.language`
+: Source language of terminology. **Example**: `de-DE` (German/Germany)
+
+`args.target.language`
+: Target language of terminology. **Example**: `en-GB` (English/Great Britain)
 
 
 
@@ -279,8 +284,9 @@ The transformation scenario `TBX-Basic` transforms the terminology to a [TBX-Bas
 
 #### Parameters
 
-| Parameters | Values | Description |
-|-------------------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| args.source.language | **Example**: `de-DE` | The source language of the terms. |
-| args.target.language | **Example**: `de-DE` | The target language of the terms. |
+`args.source.language`
+: The source language of the terms. **Example**: `de-DE`
+
+`args.target.language`
+: The target language of the terms. **Example**: `de-DE`
 

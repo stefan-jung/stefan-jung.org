@@ -7,6 +7,8 @@ const markdownItEmoji = require('markdown-it-emoji');
 const markdownItFootnote = require('markdown-it-footnote');
 const markdownitMark = require('markdown-it-mark');
 const markdownitAbbr = require('markdown-it-abbr');
+const markdownitDeflist = require('markdown-it-deflist');
+const markdownitCollapsible = require('markdown-it-collapsible');
 const {slugifyString} = require('../utils');
 
 const markdownLib = markdownIt({
@@ -45,6 +47,8 @@ const markdownLib = markdownIt({
   .use(markdownItEmoji)
   .use(markdownItFootnote)
   .use(markdownitMark)
-  .use(markdownitAbbr);
+  .use(markdownitDeflist)
+  .use(markdownitAbbr)
+  .use(markdownitCollapsible);
 
 module.exports = markdownLib;
