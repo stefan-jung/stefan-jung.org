@@ -81,60 +81,15 @@ Main Features
 
 * Create and change terms easily using specialized DITA topics. The new DITA `<termentry>` topic represents a single terminology concept. Terminology concepts are linked together to a terminology database using the new DITA `<termmap>` map.
 * Author terminology concepts easily using an <oXygen/> XML framework, which is providing author mode stylesheets, which simplify the editing of `<termentry>` and `<termmap>` topics and maps.
-* Terminology Harvester, to harvest terms from translation memories (.tmx) or XLIFF files (.xlf or .xliff).
+* **Termbrowser** - Generate a responsive website for browsing through your terminology. Read more on [Terminology browser](/plugins/termbrowser.html)
+* **Oxygen Terminology Checker** - Generate terminology checker rules for the [Oxygen Terminology Checker Add-on](https://www.oxygenxml.com/doc/versions/26.1/ug-editor/topics/terminology-checker-addon.html). Read more on [Oxygen Terminology Checker](/plugins/terminology-oxygen-terminology-checker.html). 
+* **Termchecker for DITA and XLIFF** - Check terminology in DITA and XLIFF files with Schematron rules. Read more on [Termchecker for DITA and XLIFF](/plugins/terminology-checker-dita-xliff.html).
+* **Terminology Harvester** - Harvest new terms from translation memories (.tmx) or XLIFF files (.xlf or .xliff). Read more on [Terminology Harvester](/plugins/terminology-harvester.html).
+* **TBX/MARTIF** - You can generate TermBase eXchange (TBX) files to share your terminology with your translation vendor. Read more on [TermBase eXchange (TBX)/MARTIF](/plugins/terminology-tbx.html).
 
 **Quick Start Presentation**: Recorded by [Syncro Soft/OxygenXML Editor](https://www.oxygenxml.com/about_us.html), DITA-OT Day 2016, Munich
 
 <!-- Slides: [https://doctales.github.io/presentations/presentation-dita-ot-day/index.html](https://doctales.github.io/presentations/presentation-dita-ot-day/index.html) -->
-  
-
-Termbrowser
------------
-
-The termbrowser is designed to browse through your terminology database. You can find an example generated from the provided sample files here: [stefanjung.netlify.app/termbrowser](https://stefanjung.netlify.app/termbrowser/). The termbrowser also contains a [semantic net](https://stefanjung.netlify.app/termbrowser/semantic-net/) and displays [statistics](https://stefanjung.netlify.app/termbrowser/semantic-net/termstats.html).
-
-
-<!--
-<video controls>
-  <source src="../assets/images/termbrowser.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
--->
-
-
-Termchecker
------------
-
-The termchecker is designed to search for not recommended terms in various data formats.
-
-*   [Termchecker XLIFF](/wiki/spaces/DOC/pages/40008144/Termchecker+XLIFF) — This page explains how to use the termchecker for XLIFF. The Termchecker XLIFF (as the [Termchecker DITA](/wiki/spaces/DOC/pages/40008098/Termchecker+DITA)) is technically a [Schematron](http://www.schematron.com/) file, that searches for not recommended terms and replaces them with preferred synonyms. It is recommended [add a new document type association](http://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/preferences-document-type-association.html) by extending the `XLIFF` framework and [create a new validatation scenario](https://www.oxygenxml.com/doc/versions/18/ug-editor/tasks/create-validation-scenario.html) using the termchecker XLIFF Schematron file.
-    
-*   [Termchecker DITA](/wiki/spaces/DOC/pages/40008098/Termchecker+DITA) — This page explains how to use the termchecker for DITA. The DITA Termchecker is technically a [Schematron](http://www.schematron.com/) file, that searches for not recommended terms and replaces them with preferred synonyms. It is recommended [add a new document type association](http://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/preferences-document-type-association.html) by extending the `DITA` framework and [create a new validatation scenario](https://www.oxygenxml.com/doc/versions/18/ug-editor/tasks/create-validation-scenario.html) using the termchecker DITA Schematron file.
-    
-
-TBX
----
-
-TBX is a data format to exchange a terminology database, e.g. to pass it to your Language Service Provider (LSP).
-
-*   [TBX-Basic](/wiki/spaces/DOC/pages/40008215/TBX-Basic) — The transformation scenario `TBX-Basic` transforms the terminology to a [TBX-Basic](http://www.ttt.org/oscarstandards/tbx/tbx-basic.html) file. A TBX-Basic file is a lighter version of the Terminology Base Exchange (TBX) format. You can send this file to a language service provider to make sure, that the translator uses the correct terminology during translation.
-    
-*   [TBX-Min](/wiki/spaces/DOC/pages/40008179/TBX-Min) — The transformation scenarios `TBX-Min` transforms the terminology to a TBX-Min file. The TBX-Min format is a dialect of the TermBase eXchange (TBX) format and is designed for bilingual or monolingual glossaries. You can use TBX-Min to transmit a terminology database to a language service provider (LSP). You can send this file to a language service provider to make sure, that the translator uses the correct terminology during translation. The TBX-Min format is explained in the paper [TBX - Min: A Simplified TBX - Based Approach to Representing Bilingual Glossaries](http://www.tbxinfo.net/wp-content/uploads/2016/10/lommel_melby_glenn_hayes_snow-final.pdf).
-
-
-Terminology Harvester
----------------------
-
-It is always a good idea to maintain and harmonize your translation memories and your terminology database. During this work, you will identify inconsistencies that you can map into your terminology using non-permissible terms and eliminate them in the long term.
-
-The clear solution is of course to prepare a terminological concept before the first translation and to clearly define the associated terms in all target languages. In practice, however, this is often not feasible and often not even desirable for economic reasons.
-
-The Terminology Harvester is crawling through translation memories and XLIFF files and is extracting translated terms as **`<termentry>`** topics, `.csv`, or `.txt` files. The Terminology Harvester intentionally only checks the segments in which the term being searched for occurs exclusively. Segments in which the term is embedded in a sentence structure are deliberately ignored.
-
-![Terminology Harvester principle](../assets/images/termharvester-principle.drawio.png)
-
-> [!NOTE]
-> Highlights information that users should take into account, even when skimming.
 
 
 
@@ -189,9 +144,11 @@ This page explains how to use the termchecker for DITA. The DITA Termchecker is 
 
 The termchecker for DITA transformation supports the following parameters, that can be passed with `-Dparameter=value` to the dita command. You can find more information about parameters on [Building output using the dita command](http://www.dita-ot.org/dev/user-guide/build-using-dita-command.html).
 
-| Parameter       | Values  | Description                             |
-|-----------------|---------|-----------------------------------------|
-| `args.language` | `de-DE` | Language of the terminology check rules |
+
+##### Termchecker XLIFF Parameters
+
+`args.language`
+: Language of the terminology check rules. For example `de-DE`.
 
 
 #### Publishing a Termchecker for DITA using the dita command
@@ -277,27 +234,4 @@ If you want to publish the _termbrowser responsive_ via command line interface, 
 ```xml
 dita --input terminology.ditamap --format termbrowser-responsive -Dargs.default.language=en-GB --output out/termbrowser-responsive
 ```
-
-
-The transformation scenarios `TBX-Min` transforms the terminology to a TBX-Min file. The TBX-Min format is a dialect of the TermBase eXchange (TBX) format and is designed for bilingual or monolingual glossaries. You can use TBX-Min to transmit a terminology database to a language service provider (LSP). You can send this file to a language service provider to make sure, that the translator uses the correct terminology during translation. The TBX-Min format is explained in the paper [TBX - Min: A Simplified TBX - Based Approach to Representing Bilingual Glossaries](http://www.tbxinfo.net/wp-content/uploads/2016/10/lommel_melby_glenn_hayes_snow-final.pdf).
-
-
-`args.source.language`
-: Source language of terminology. **Example**: `de-DE` (German/Germany)
-
-`args.target.language`
-: Target language of terminology. **Example**: `en-GB` (English/Great Britain)
-
-
-
-The transformation scenario `TBX-Basic` transforms the terminology to a [TBX-Basic](http://www.ttt.org/oscarstandards/tbx/tbx-basic.html) file. A TBX-Basic file is a lighter version of the Terminology Base Exchange (TBX) format. You can send this file to a language service provider to make sure, that the translator uses the correct terminology during translation.
-
-
-#### Parameters
-
-`args.source.language`
-: The source language of the terms. **Example**: `de-DE`
-
-`args.target.language`
-: The target language of the terms. **Example**: `de-DE`
 
