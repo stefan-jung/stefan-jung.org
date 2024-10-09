@@ -31,11 +31,13 @@ TBX Basic
 
 #### Parameters
 
-`args.source.language`
-: The source language of the terms. **Example**: `de-DE`
+The transformation `tbx-basic-v3` allows the following parameters.
 
-`args.target.language`
-: The target language of the terms. **Example**: `de-DE`
+`debugging.mode`
+: Activates the debugging mode. Possible values are `true` and `false`. Default value is `false`.
+ 
+`main.language`
+: Default language for definitions and so forth, for instance `en-US`.
 
 
 TBX Min
@@ -45,15 +47,21 @@ TBX Min
 
 #### Parameters
 
-`args.source.language`
+`source.language`
 : Source language of terminology. **Example**: `de-DE` (German/Germany)
 
-`args.target.language`
+`target.language`
 : Target language of terminology. **Example**: `en-GB` (English/Great Britain)
 
+`license`
+: License information to be added in the header.
 
 Multiterm
 ---------
 
 The following transformation scenarios generate RWS Multiterm XML files. You can choose between the transformations `multiterm` and `multiterm-custom`. The transformation `multiterm-custom` is tailored for special requirements when your translation vendor is RWS.
 
+#### Parameters
+
+`debugging.mode`
+: Activate the debugging mode. Possible values are `true` and `false`. Default value is `false`.
