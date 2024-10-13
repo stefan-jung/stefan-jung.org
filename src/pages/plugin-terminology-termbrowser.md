@@ -31,7 +31,7 @@ Parameters
 : Activates the debugging mode.
 
 `generate-termstats`
-: Set this parameter to `true` to force the generation of a terminology statistics XML file. Usually the transtype tries to auto-detect if this should be done. The condition is fulfilled, if the transtype is 'termbrowser-responsive' and a &lt;termstatsref&gt; element needs to be available on the terminology map. But this does not work, if the transtype has been extended.` Possible values are `true` and `false`. Default value is `true`.
+: Set this parameter to `true` to force the generation of a terminology statistics XML file. Usually the transtype tries to auto-detect if this should be done. The condition is fulfilled, if the transtype is 'termbrowser-responsive' and a &lt;termstatsref&gt; element needs to be available on the terminology map. But this does not work, if the transtype has been extended. Possible values are `true` and `false`. Default value is `true`.
 
 `args.termstats`
 : Point this to a terminology statistics XML file from a previous build. If you save the terminology statistics every time you generate a term browser and feed them into the next build via this parameter, you can generate statistics over time.
