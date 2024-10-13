@@ -37,7 +37,7 @@ Parameters
 : Point this to a terminology statistics XML file from a previous build. If you save the terminology statistics every time you generate a term browser and feed them into the next build via this parameter, you can generate statistics over time.
 
 
-##### Parameters for semantic net edges
+#### Parameters for semantic net edges
 
 `term.semantic-net.layout.improvedLayout`
 : When enabled, the network will use the Kamada Kawai algorithm for initial layout. For networks larger than 100 nodes, clustering will be performed automatically to reduce the amount of nodes. This can greatly improve the stabilization times. If the network is very interconnected (no or few leaf nodes), this may not work and it will revert back to the old method. Possible values are `true` and `false`. Default value is `true`.
@@ -55,7 +55,7 @@ Parameters
 : Width of semantic net edges. Needs to be a numerical value, for example `5`. Default width is `1`.
 
 
-##### Parameters for semantic net terms
+#### Parameters for semantic net terms
 
 `term.semantic-net.term.border`
 : Semantic net term node border. Default value is `1`.
@@ -70,7 +70,7 @@ Parameters
 : Semantic net term node font size in px. Use only a digit. Default value is `9`.
 
 
-##### Parameters for semantic net physics
+#### Parameters for semantic net physics
 
 `term.semantic-net.physics.stabilization.enabled`
 : Toggle the stabilization. This is an optional property. If undefined, it is automatically set to true when any of the properties of this object are defined. Possible values are `true` and `false`. Default value is `true`.
