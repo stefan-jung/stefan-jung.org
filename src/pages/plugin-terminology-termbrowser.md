@@ -43,13 +43,13 @@ Parameters
 : When enabled, the network will use the Kamada Kawai algorithm for initial layout. For networks larger than 100 nodes, clustering will be performed automatically to reduce the amount of nodes. This can greatly improve the stabilization times. If the network is very interconnected (no or few leaf nodes), this may not work and it will revert back to the old method. Possible values are `true` and `false`. Default value is `true`.
 
 `term.semantic-net.edges.color.color`
-: Color of semantic net edges as HTML color code. Color codes are must not be suffixed with a semicolon. Write '#96c3ff', not '#96c3ff;'.
+: Color of semantic net edges as HTML color code. Color codes are must not be suffixed with a semicolon. Write `#96c3ff`, not `#96c3ff;`.
 
 `term.semantic-net.edges.color.highlight`
-: Color of highlighted semantic net edges as HTML color code. Color codes are must not be suffixed with a semicolon. Write '#96c3ff', not '#96c3ff;'.
+: Color of highlighted semantic net edges as HTML color code. Color codes are must not be suffixed with a semicolon. Write `#96c3ff`, not `#96c3ff;`.
 
 `term.semantic-net.edges.color.hover`
-: Color of hovered semantic net edges as HTML color code. Color codes are must not be suffixed with a semicolon. Write '#96c3ff', not '#96c3ff;'.
+: Color of hovered semantic net edges as HTML color code. Color codes are must not be suffixed with a semicolon. Write `#96c3ff`, not `#96c3ff;`.
 
 `term.semantic-net.edges.width`
 : Width of semantic net edges. Needs to be a numerical value, for example `5`. Default width is `1`.
@@ -82,7 +82,7 @@ Parameters
 : When stabilizing, the DOM can freeze. You can chop the stabilization up into pieces to show a loading bar for instance. The interval determines after how many iterations the stabilizationProgress event is triggered. Default value is `50`.
 
 `term.semantic-net.physics.forceAtlas2Based.gravitationalConstant`
-: This is similar to the barnesHut method except that the falloff is linear instead of quadratic. The connectivity is also taken into account as a factor of the mass. If you want the repulsion to be stronger, decrease the value (so -1000, -2000). Default value is `-50`.
+: This is similar to the barnesHut method except that the falloff is linear instead of quadratic. The connectivity is also taken into account as a factor of the mass. If you want the repulsion to be stronger, decrease the value (so `-1000`, `-2000`). Default value is `-50`.
 
 `term.semantic-net.physics.forceAtlas2Based.centralGravity`
 : There is a central gravity attractor to pull the entire network back to the center. This is not dependent on distance. Default value is `0.01`.
