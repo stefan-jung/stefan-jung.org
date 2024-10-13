@@ -54,4 +54,3 @@ The oXygen framework helps you to author your terminology database. It consists 
 1.  In oXygen XML open the menu `Options` > `Preferences`.
 2.  In the preferences, open `Document Type Association` > `Locations`.
 3.  Add the directory of the plugin. You can find the plugin in the `plugins` directory of the DITA-OT, e.g. `/home/user/workspace/DITA/dita-ot/plugins/org.jung.terminology`.
-
