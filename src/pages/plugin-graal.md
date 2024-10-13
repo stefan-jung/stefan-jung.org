@@ -20,7 +20,7 @@ preloads:
 Parent: <a class="crumb" href="{{ crumb.url | url }}">{{ crumb.title }}</a>
 {% endfor %}
 
-[org.jung.graal](https://github.com/stefan-jung/org.jung.graal) is a plugin for the [DITA-OT](https://www.dita-ot.org/) and is providing the Graal VM for executing JavaScript with Apache Ant.
+[<i class="fa-brands fa-github"></i> org.jung.graal](https://github.com/stefan-jung/org.jung.graal) is a plugin for the [DITA-OT](https://www.dita-ot.org/) and is providing the Graal VM for executing JavaScript with Apache Ant.
 
 ![GraalVM](https://raw.githubusercontent.com/oracle/graal/master/.github/assets/logo_320x64.svg)
 
