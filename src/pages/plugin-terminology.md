@@ -70,11 +70,6 @@ Creating a **`<termentry>`** topic is as easy as creating a normal DITA topic. T
 ```
 +++
 
-> <i class="fa-solid fa-triangle-exclamation"></i> **CAUTION** **`<termentry>`** topics are not meant to be used or reused in a normal DITA project, they are just used for storing the terminology.
-
-> <i class="fas fa-circle-info"></i> **INFO** If you have found a bug or want to request a feature, please raise a <i class="fa-brands fa-github"></i> [GitHub issue](https://github.com/stefan-jung/org.jung.terminology/issues).
-
-
 
 Main Features
 =============
