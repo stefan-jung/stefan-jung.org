@@ -57,8 +57,8 @@ Parameters
 
 #### Parameters for semantic net terms
 
-`term.semantic-net.term.border`
-: Semantic net term node border. Default value is `1`.
+`term.semantic-net.term.border.color`
+: Semantic net term node border. Default value is `#96c3ff`.
 
 `term.semantic-net.term.background`
 : Semantic net term node background
