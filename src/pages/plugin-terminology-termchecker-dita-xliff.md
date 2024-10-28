@@ -83,7 +83,7 @@ Termchecker XLIFF
         
 4.  Create a new DITA topic.
 5.  Set the `xml:lang` attribute of the topic to `en-GB` and write the word `truck` somewhere in the topic.  
-    The term violation is indicated with a small lamp icon. Click on the lamp select the `Replace with an allowed term`action. This works both in text and in author mode.
+    The term violation is indicated with a small lamp icon. Click on the lamp select the `Replace with an allowed term` action. This works both in text and in author mode.
       
     The deprecated term has been replaced.
 
@@ -115,15 +115,6 @@ This page explains how to use the termchecker for XLIFF. The Termchecker XLIFF (
 **Quick Start Presentation**: Recorded by [Syncro Soft/OxygenXML Editor](https://www.oxygenxml.com/about_us.html), DITA-OT Day 2016, Munich
 
 <!-- Slides: [https://doctales.github.io/presentations/presentation-dita-ot-day/index.html](https://doctales.github.io/presentations/presentation-dita-ot-day/index.html) -->
-
-  
-
-Using the plugin
-================
-
-**org.jung.terminology** ships a few sample files, that show you how to create terms and create the various outputs. To test the transformations, just open the `terminology.ditamap` in the oXygen DITA Maps Manager and run a transformation scenario.
-
-This page explains how to use the termchecker for DITA. The DITA Termchecker is technically a [Schematron](http://www.schematron.com/) file, that searches for not recommended terms and replaces them with preferred synonyms. It is recommended [add a new document type association](http://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/preferences-document-type-association.html) by extending the `DITA` framework and [create a new validatation scenario](https://www.oxygenxml.com/doc/versions/18/ug-editor/tasks/create-validation-scenario.html) using the termchecker DITA Schematron file.
 
 > <i class="fas fa-circle-info"></i> **INFO** To learn how to validate your DITA topics with the Schematron termchecker, read [Creating a New Validation Scenario](https://www.oxygenxml.com/doc/versions/26.1/ug-editor/topics/create-validation-scenario.html).
 

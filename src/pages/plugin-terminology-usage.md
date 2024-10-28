@@ -67,7 +67,8 @@ Creating a `<termentry>` topics is very easy when you have installed the Oxygen 
 ```
 +++
 
-The best way to start using the plugin is to have a look at the comprehensive samples shipped with the plugin. The samples contain a DITA-OT project file with predefined transformations to create termchecker files, termbrowser, and so forth. If you don't know what a DITA-OT project file is, read [dita-ot.org - Publishing with project files](https://www.dita-ot.org/dev/topics/using-project-files). You can read more about how to publish with a DITA-OT project file in the [Oxygen XML documentation](https://www.oxygenxml.com/doc/versions/26.1/ug-editor/topics/publishing_with_a_dita_ot_project_file.html?hl=publishing%2Cdita-ot%2Cproject%2Cfile).
+
+**org.jung.terminology** ships a comprehensive set of sample files, that show you how to create terms and create the various outputs. The samples contain a DITA-OT project file with predefined transformations to create termchecker files, termbrowser, and so forth. If you don't know what a DITA-OT project file is, read [dita-ot.org - Publishing with project files](https://www.dita-ot.org/dev/topics/using-project-files). You can read more about how to publish with a DITA-OT project file in the [Oxygen XML documentation](https://www.oxygenxml.com/doc/versions/26.1/ug-editor/topics/publishing_with_a_dita_ot_project_file.html?hl=publishing%2Cdita-ot%2Cproject%2Cfile). To test the transformations, just open the `terminology.ditamap` in the oXygen DITA Maps Manager and run a transformation scenario.
 
 > <i class="fa-solid fa-triangle-exclamation"></i> **CAUTION** **`<termentry>`** topics are not meant to be used or reused in a normal DITA project, they are just used for storing the terminology.
 
