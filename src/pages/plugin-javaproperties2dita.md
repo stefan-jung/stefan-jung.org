@@ -20,7 +20,7 @@ preloads:
 Parent: <a class="crumb" href="{{ crumb.url | url }}">{{ crumb.title }}</a>
 {% endfor %}
 
-[org.doctales.javaProperties2Dita](https://github.com/doctales/org.doctales.javaProperties2Dita) is a DITA-OT plugin for converting Java property files to DITA. Java property files are simple key-value-files, that are converted to DITA `<keyword>` elements. If you have a question, go to the [questions](https://doctales.atlassian.net/wiki/display/J2D/questions/onboarding) section and ask the DOCTALES team. If you have found a bug or want to request a feature, please raise an [issue](https://github.com/doctales/org.doctales.javaProperties2Dita/issues).
+[org.jung.javaproperties2dita](https://github.com/stefan-jung/org.jung.javaproperties2dita) is a DITA-OT plugin for converting Java property files to DITA. Java property files are simple key-value-files, that are converted to DITA `<keyword>` elements. If you have found a bug or want to request a feature, please raise an [issue](https://github.com/stefan-jung/org.jung.javaproperties2dita/issues).
 
   
 
