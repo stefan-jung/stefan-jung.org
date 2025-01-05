@@ -41,9 +41,7 @@ You need to either set the '`schematron.map.validation.files`' and/or '`schematr
 Parameters
 ==========
 
-
-`schematron.processing.engine`
-: Engine used to validate DITA maps and topics. Possible values are `schematron`, `xslt`, `pure`. Default value is `pure`.
+| `schematron.processing.engine` | Engine used to validate DITA maps and topics. Possible values are `schematron`, `xslt`, `pure`. Default value is `pure`. |
 
 `schematron.map.validation.files`
 : Comma separated list of Schematron files for map validation.
