@@ -45,23 +45,30 @@ Parameters
 `schematron.processing.engine`
 : `schematron`, `xslt`, `pure` Default: `pure` Engine used to validate DITA maps and topics
 
+
 `schematron.map.validation.files`
 : Comma separated list of Schematron files for map validation
+
 
 `schematron.topic.validation.files`
 : Comma separated list of Schematron files for topic validation
 
+
 `schematron.fail`
 : `true` or `false` Indicates, whether the build should fail, if a role fires with a certain role level.
+
 
 `schematron.failon.fatal`
 : `true` or `false` Indicates, whether the build should fail, if a Schematron rule with role `fatal` is fired.
 
+
 `schematron.failon.error`
 : `true` or `false` Default: `true` Indicates, whether the build should fail, if a Schematron rule with role `error` is fired.
 
+
 `schematron.failon.warning`
 : `true` or `false` Default: `false` Indicates, whether the build should fail, if a Schematron rule with role `warning` is fired.
+
 
 `schematron.failon.info`
 : `true` or `false` Default: `false` Indicates, whether the build should fail, if a Schematron rule with role `info` is fired.
