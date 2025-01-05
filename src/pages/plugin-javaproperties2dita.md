@@ -74,7 +74,7 @@ Using the Plugin
 Convert via <oXygen/> transformation scenario
 ---------------------------------------------
 
-1.  Open a Java properties file in <oXygen/>.
+1.  Open a Java properties file in Oxygen XML.
 2.  Launch the transformation sceanrio `Convert Java-Properties 2 DITA`. A DITA file is created in the directory of the input file.
 
 Convert via Apache Ant transformation scenario
