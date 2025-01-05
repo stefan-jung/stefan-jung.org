@@ -50,7 +50,7 @@ Parameters
 | Parameter | Description |
 |-----------|-------------|
 | `term.semantic-net.term.border.color` | Semantic net term node border. Default value is `#96c3ff`. |
-| `term.semantic-net.term.background` | Semantic net term node background |
+| `term.semantic-net.term.background` | Semantic net term node background. |
 | `term.semantic-net.term.font.color` | Semantic net term node font color. Default color is `#1471bb`. |
 | `term.semantic-net.term.font.size` | Semantic net term node font size in px. Use only a digit. Default value is `9`. |
 
