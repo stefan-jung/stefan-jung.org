@@ -43,32 +43,25 @@ Parameters
 
 
 `schematron.processing.engine`
-: `schematron`, `xslt`, `pure` Default: `pure` Engine used to validate DITA maps and topics
-
+: Engine used to validate DITA maps and topics. Possible values are `schematron`, `xslt`, `pure`. Default value is `pure`.
 
 `schematron.map.validation.files`
-: Comma separated list of Schematron files for map validation
-
+: Comma separated list of Schematron files for map validation.
 
 `schematron.topic.validation.files`
 : Comma separated list of Schematron files for topic validation
 
-
 `schematron.fail`
-: `true` or `false` Indicates, whether the build should fail, if a role fires with a certain role level.
-
+: Indicates, whether the build should fail, if a role fires with a certain role level. Possible values are `true` or `false`. Default value is `true`.
 
 `schematron.failon.fatal`
-: `true` or `false` Indicates, whether the build should fail, if a Schematron rule with role `fatal` is fired.
-
+: Indicates, whether the build should fail, if a Schematron rule with role `fatal` is fired. Possible values are `true` or `false`. Default value is `true`.
 
 `schematron.failon.error`
-: `true` or `false` Default: `true` Indicates, whether the build should fail, if a Schematron rule with role `error` is fired.
-
+: `true` or `false` Default: `true` Indicates, whether the build should fail, if a Schematron rule with role `error` is fired. Possible values are `true` or `false`. Default value is `true`.
 
 `schematron.failon.warning`
-: `true` or `false` Default: `false` Indicates, whether the build should fail, if a Schematron rule with role `warning` is fired.
-
+: `true` or `false` Default: `false` Indicates, whether the build should fail, if a Schematron rule with role `warning` is fired. Possible values are `true` or `false`. Default value is `false`.
 
 `schematron.failon.info`
-: `true` or `false` Default: `false` Indicates, whether the build should fail, if a Schematron rule with role `info` is fired.
+: `true` or `false` Default: `false` Indicates, whether the build should fail, if a Schematron rule with role `info` is fired. Possible values are `true` or `false`. Default value is `false`.
