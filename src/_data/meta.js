@@ -32,7 +32,7 @@ module.exports = {
   address: {
     // edit all presets or leave empty. They are being used in the pages for privacy.md and imprint.md
     firma: 'Stefan Jung Consulting',
-    street: 'Philipp-Manz-Straße 54',
+    street: 'Münsterstraße 55',
     city: 'Greven',
     state: 'North Rhine Westphalia',
     country: 'Germany',
