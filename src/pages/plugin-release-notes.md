@@ -20,7 +20,7 @@ preloads:
 Parent: <a class="crumb" href="{{ crumb.url | url }}">{{ crumb.title }}</a>
 {% endfor %}
 
-[org.jung.release-notes](https://github.com/doctales/org.doctales.release-notes) is a plugin for the [DITA-OT](http://dita-ot.github.io/) that extends the **org.dita.pdf2** plugin to automatically create release-notes lists or tables from the [DITA 1.3 release-management domain elements](http://docs.oasis-open.org/dita/dita/v1.3/os/part3-all-inclusive/archSpec/technicalContent/releaseManagement-domain.html#dita_release_management_domain_topic). If you have a question, go to the [questions](https://doctales.atlassian.net/wiki/display/J2D/questions/onboarding) section and ask the DOCTALES team. If you have found a bug or want to request a feature, please raise an [issue](https://github.com/doctales/org.doctales.javaProperties2Dita/issues).
+[org.jung.release-notes](https://github.com/stefan-jung/org.jung.release-notes) is a plugin for the [DITA-OT](http://dita-ot.github.io/) that extends the **org.dita.pdf2** plugin to automatically create release-notes lists or tables from the [DITA 1.3 release-management domain elements](http://docs.oasis-open.org/dita/dita/v1.3/os/part3-all-inclusive/archSpec/technicalContent/releaseManagement-domain.html#dita_release_management_domain_topic). If you have found a bug or want to request a feature, please raise an [issue](https://github.com/stefan-jung/org.jung.release-notes/issues).
 
 To learn more about the **release-management domain**, read the official [DITA 1.3 release management domain feature article](https://www.oasis-open.org/committees/download.php/56339/Release_Management_WP.pdf).
 
@@ -29,9 +29,9 @@ To learn more about the **release-management domain**, read the official [DITA
 Installation
 ============
 
-You can directly install the plugin to the DITA-OT by calling the `dita` command with the `--install` parameter and point it to the `master.zip` that contains the latest changes checked in on the `master` branch on the [GitHub repository](https://github.com/doctales/org.doctales.release-notes).
+You can directly install the plugin to the DITA-OT by calling the `dita` command with the `--install` parameter and point it to the `master.zip` that contains the latest changes checked in on the `master` branch on the [GitHub repository](https://github.com/stefan-jung/org.jung.release-notes).
 
-dita --install https://github.com/doctales/org.doctales.release-notes/archive/master.zip
+dita --install https://github.com/stefan-jung/org.jung.release-notes/archive/master.zip
 
   
 Using the Plugin
@@ -103,18 +103,18 @@ At the bottom of your shell XSL add:
   
 
 ```xml
-<xsl:import href="plugin:org.doctales.release-notes:xsl/fo/root-processing.xsl"/>
-<xsl:import href="plugin:org.doctales.release-notes:cfg/fo/attrs/release-notes.xsl"/>
-<xsl:import href="plugin:org.doctales.release-notes:xsl/fo/release-notes.xsl"/>
+<xsl:import href="plugin:org.jung.release-notes:xsl/fo/root-processing.xsl"/>
+<xsl:import href="plugin:org.jung.release-notes:cfg/fo/attrs/release-notes.xsl"/>
+<xsl:import href="plugin:org.jung.release-notes:xsl/fo/release-notes.xsl"/>
 ```
 
   
-Because you now have added a hard dependency to **org.doctales.release-notes**, you should explicitely name it so by adding the following `<require>` element to your **plugin.xml**:
+Because you now have added a hard dependency to **org.jung.release-notes**, you should explicitely name it so by adding the following `<require>` element to your **plugin.xml**:
 
   
 
 ```xml
-<require plugin="org.doctales.release-notes"/>
+<require plugin="org.jung.release-notes"/>
 ```
 
 Sample Files
