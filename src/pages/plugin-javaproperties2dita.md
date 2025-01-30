@@ -54,7 +54,7 @@ Installing the Plugin
 Install the plugin to the DITA-OT with the following command:
 
 ```xml
-dita --install https://github.com/doctales/org.doctales.javaProperties2Dita/archive/master.zip
+dita --install https://github.com/stefan-jung/org.jung.javaproperties2dita/archive/master.zip
 ```
 
   
@@ -66,7 +66,7 @@ This step is optional. To install the <oXygen/> XML framework, proceed as follow
 
 1.  In <oXygen/> open the menu `Options` > `Preferences`.
 2.  In the preferences, open `Document Type Association` > `Locations`.
-3.  Add the directory of the plugin in the DITA-OT, e.g. `/home/user/workspace/dita-ot/plugins/org.doctales.javaProperties2Dita`.
+3.  Add the directory of the plugin in the DITA-OT, e.g. `/home/user/workspace/dita-ot/plugins/org.jung.javaProperties2Dita`.
 
 Using the Plugin
 ================
