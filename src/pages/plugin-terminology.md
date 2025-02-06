@@ -35,7 +35,7 @@ Main Features
 * **Termchecker for DITA and XLIFF** - Check terminology in DITA and XLIFF files with Schematron rules. Read more on [Termchecker for DITA and XLIFF](/plugins/terminology-checker-dita-xliff.html).
 * **Terminology Harvester** - Harvest new terms from translation memories (.tmx) or XLIFF files (.xlf or .xliff). Read more on [Terminology Harvester](/plugins/terminology-harvester.html).
 * **TBX/MARTIF** - You can generate TermBase eXchange (TBX) files to share your terminology with your translation vendor. Read more on [TermBase eXchange (TBX)/MARTIF](/plugins/terminology-tbx.html).
-
+* **ODS Export/Import** - You can export your terminology in a specific language as an OpenDocument Spreadsheet. This is helpful to localize/review your terminology. Read more on [OpenDocument Spreadsheet (ODS)](/plugins/terminology-ods.html)
 
 Next steps
 ==========
