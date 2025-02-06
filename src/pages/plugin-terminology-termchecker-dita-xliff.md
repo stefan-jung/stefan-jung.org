@@ -53,21 +53,6 @@ Termchecker XLIFF
 : Language of the terminology check rules.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### Publishing a Termchecker for DITA from oXygen XML
 
 1.  Open the samples DITA map `~/org.stefan.jung.terminology/samples/terminology.ditamap` in the oXygen DITA Maps Manager.

@@ -29,7 +29,7 @@ Installing the Plugin
 2.  Install the plugin using the dita command.
     
     ```xml
-    dita --install https://github.com/doctales/org.doctales.schematron/archive/master.zip
+    dita --install https://github.com/stefan-jung/org.jung.schematron/archive/main.zip
     ```
     
 
