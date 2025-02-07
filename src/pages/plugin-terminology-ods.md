@@ -19,7 +19,27 @@ preloads:
 
 OpenDocument Spreadsheet (ODS) is a spreadsheet format, but technically simpler than XSLX. You can export your terminology in a specific language, modify the spreadsheet and then import it again afterwards. This is very helpful, if you would like to add a completely new language to your terminology, or if you would like to review the existing terms in a specific language.
 
-Usage
------
+Exporting terms
+---------------
 
-Open the **`<termmap>`** in Oxygen XML and call the `Export OpenDocument Spreadsheet (ODS)` from the `Terminology` menu. You can later import the same file again by calling `Import OpenDocument Spreadsheet (ODS)` from the `Terminology` menu.
+Open the **`<termmap>`** in Oxygen XML and call the `Export OpenDocument Spreadsheet (ODS)` from the `Terminology` menu. 
+
+#### Parameters
+
+`export`
+: Speficy if only `Existing` terms in the target language should be exported, or only the `Missing` terms in the target language or `Both`. Default value is `Both`.
+ 
+`main.language`
+: Default language for definitions and so forth, for instance `en-US`.
+
+`term.language`
+: Language code of the terms to be exported, for instance `de-DE`.
+
+
+
+
+
+Importing terms
+---------------
+
+Open the **`<termmap>`** in Oxygen XML and call the `Import OpenDocument Spreadsheet (ODS)` from the `Terminology` menu. 
