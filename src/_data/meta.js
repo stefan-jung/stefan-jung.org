@@ -2,7 +2,7 @@ module.exports = {
   url: process.env.URL || 'http://localhost:8080',
   siteName: 'Stefan Jung',
   siteDescription:
-    'Personal website of Stefan Jung',
+    'Stefan Jung Consulting - Your Technical Documentation expert',
   siteType: 'Person', // schema
   locale: 'en_EN',
   lang: 'en',
