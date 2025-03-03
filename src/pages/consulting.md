@@ -5,6 +5,8 @@ layout: page
 permalink: /consulting/index.html
 ---
 
+If you need support, write an e-mail to [stefan.jung.consulting@mailbox.org](mailto:stefan.jung.consulting@mailbox.org).
+
 ## Processes
 
 If you would like to reduce the time-to-market of your technical documentation assets, you have to improve the authoring and the translation processes.
