@@ -43,7 +43,7 @@ Publishing the Sample Presentation
 3.  Publish the presentation by calling the following command in the `presentation` directory.
     
     ```bash
-    dita --input doctales.ditamap --format reveal -Dargs.reveal.theme=doctales -Dargs.reveal.css=css/doctales.css
+    dita --input doctales.ditamap --format reveal -Dreveal.theme=doctales -Dreveal.css=css/doctales.css
     ```
 
 Presentation Structure
@@ -140,39 +140,39 @@ Parameters
 
 | Parameter                              | Description                                                                                        |
 |----------------------------------------|----------------------------------------------------------------------------------------------------|
-| `args.reveal.autoslide`                | Number of milliseconds between automatically proceeding to the next slide, disabled when set to 0. |
-| `args.reveal.autoslidestoppable`       | Stop auto-sliding after user input. Possible values are `true` and `false`. Default value is `true`. |
-| `args.reveal.backgroundtransition`     | Transition style for full page slide backgrounds. Possible values are `default`, `none`, `fade`, `slide`, `convex`, `concave`, `zoom`. Default value is `default`. |
-| `args.reveal.center`                   | Vertical centering of slides. Possible values are `true` and `false`.Default value is `true`. |
-| `args.reveal.controls`                 | Display controls in the bottom right corner. Possible values are `true` and `false`. Default value is `true`. |
-| `args.reveal.controlsLayout`           | Determines where controls appear. Possible values are `edges` and `bottom-right`. Default value is `edges`. |
-| `args.reveal.css`                      | Path to CSS file, e.g. `~/org.stefan.jung/css/stefan-jung.css` |                                                                                                                  |
-| `args.reveal.embedded`                 | Flags if the presentation is running in an embedded mode, i.e. contained within a limited portion of the screen. Possible values are `true` and `false`. Default value is `false`. |
-| `args.reveal.fragments`                | Turns fragments on and off globally. Possible values are `true` and `false`. Default value is `true`. |
-| `args.reveal.generate.vertical.slides` | Generate vertical slides for level 2 topics and below. Possible values are `true` and `false`. Default value is `true`. |
-| `args.reveal.height`                   | The 'normal' height of the presentation, aspect ratio will be preserved when the presentation is scaled to fit different resolutions. Can be specified using percentage units. Default value is `700`. |
-| `args.reveal.hideaddressbar`           | Hides the address bar on mobile devices. Possible values are `true` and `false`. Default value is `true`. |
-| `args.reveal.history`                  | Push each slide change to the browser history. Possible values are `true` and `false`. Default value is `false`. |
-| `args.reveal.keyboard`                 | Enable keyboard shortcuts for navigation. Possible values are `true` and `false`. Default value is `true`. |
-| `args.reveal.loop`                     | Loop the presentation. Possible values are `true` and `false`. Default value is `false`. |
-| `args.reveal.margin`                   | Factor of the display size that should remain empty around the content. Default: `0.1` |
-| `args.reveal.maxScale`                 | Bounds for largest possible scale to apply to content. Default: `1.5` |
-| `args.reveal.minScale`                 | Bounds for smallest possible scale to apply to content. Default: `0.2` |
-| `args.reveal.mousewheel`               | Enable slide navigation via mouse wheel. Possible values are `true` and `false`. Default value is `false`. |
-| `args.reveal.overview`                 | Enable the slide overview mode. Possible values are `true` and `false`. Default value is `true`. |
-| `args.reveal.parallaxbackgroundimage`  | Set the parallax background image. Example: `~/myimage.jpg` |
-| `args.reveal.parallaxbackgroundsize`   | Parallax background size using CSS syntax. Example: `'2100px 900px'` |
-| `args.reveal.previewlinks`             | Opens links in an iframe preview overlay. Possible values are `true` and `false`. Default value is `false`. |
-| `args.reveal.progress`                 | Display a presentation progress bar. Possible values are `true` and `false`. Default value is `true`. |
-| `args.reveal.rtl`                      | Change the presentation direction to be right-to-left. Possible values are `true` and `false`. Default value is `false`. |
-| `args.reveal.slidenumber`              | Display the page number of the current slide. Possible values are `true` and `false`. Default value is `false`. |
-| `args.reveal.theme`                    | If you use a CSS template, the theme is namenameof the template is the filename without its extension. `sky`, `beige`, `simple`, `serif`, `night`, `moon`, `solarized` Default: `simple` |
-| `args.reveal.touch`                    | Enables touch navigation on devices with touch input. Possible values are `true` and `false`. Default value is `true`. |
-| `args.reveal.transition`               | Set the transition style. `default`, `none`, `fade`, `slide`, `convex`, `concave`, `zoom` Default: `default` |
-| `args.reveal.transitionspeed`          | Set the transition speed. `default`, `fast`, `slow` Default: `default` |
-| `args.reveal.version`                  | Set the reveal.js version. Default: latest |
-| `args.reveal.viewdistance`             | Set the number of slides away from the current that are visible. Default: `3` |
-| `args.reveal.width`                    | The 'normal' width of the presentation, aspect ratio will be preserved when the presentation is scaled to fit different resolutions. Can be specified using percentage units. Default: `960` |
+| `reveal.autoslide`                | Number of milliseconds between automatically proceeding to the next slide, disabled when set to 0. |
+| `reveal.autoslidestoppable`       | Stop auto-sliding after user input. Possible values are `true` and `false`. Default value is `true`. |
+| `reveal.backgroundtransition`     | Transition style for full page slide backgrounds. Possible values are `default`, `none`, `fade`, `slide`, `convex`, `concave`, `zoom`. Default value is `default`. |
+| `reveal.center`                   | Vertical centering of slides. Possible values are `true` and `false`.Default value is `true`. |
+| `reveal.controls`                 | Display controls in the bottom right corner. Possible values are `true` and `false`. Default value is `true`. |
+| `reveal.controlsLayout`           | Determines where controls appear. Possible values are `edges` and `bottom-right`. Default value is `edges`. |
+| `reveal.css`                      | Path to CSS file, e.g. `~/org.stefan.jung/css/stefan-jung.css` |                                                                                                                  |
+| `reveal.embedded`                 | Flags if the presentation is running in an embedded mode, i.e. contained within a limited portion of the screen. Possible values are `true` and `false`. Default value is `false`. |
+| `reveal.fragments`                | Turns fragments on and off globally. Possible values are `true` and `false`. Default value is `true`. |
+| `reveal.generate.vertical.slides` | Generate vertical slides for level 2 topics and below. Possible values are `true` and `false`. Default value is `true`. |
+| `reveal.height`                   | The 'normal' height of the presentation, aspect ratio will be preserved when the presentation is scaled to fit different resolutions. Can be specified using percentage units. Default value is `700`. |
+| `reveal.hideaddressbar`           | Hides the address bar on mobile devices. Possible values are `true` and `false`. Default value is `true`. |
+| `reveal.history`                  | Push each slide change to the browser history. Possible values are `true` and `false`. Default value is `false`. |
+| `reveal.keyboard`                 | Enable keyboard shortcuts for navigation. Possible values are `true` and `false`. Default value is `true`. |
+| `reveal.loop`                     | Loop the presentation. Possible values are `true` and `false`. Default value is `false`. |
+| `reveal.margin`                   | Factor of the display size that should remain empty around the content. Default: `0.1` |
+| `reveal.maxScale`                 | Bounds for largest possible scale to apply to content. Default: `1.5` |
+| `reveal.minScale`                 | Bounds for smallest possible scale to apply to content. Default: `0.2` |
+| `reveal.mousewheel`               | Enable slide navigation via mouse wheel. Possible values are `true` and `false`. Default value is `false`. |
+| `reveal.overview`                 | Enable the slide overview mode. Possible values are `true` and `false`. Default value is `true`. |
+| `reveal.parallaxbackgroundimage`  | Set the parallax background image. Example: `~/myimage.jpg` |
+| `reveal.parallaxbackgroundsize`   | Parallax background size using CSS syntax. Example: `'2100px 900px'` |
+| `reveal.previewlinks`             | Opens links in an iframe preview overlay. Possible values are `true` and `false`. Default value is `false`. |
+| `reveal.progress`                 | Display a presentation progress bar. Possible values are `true` and `false`. Default value is `true`. |
+| `reveal.rtl`                      | Change the presentation direction to be right-to-left. Possible values are `true` and `false`. Default value is `false`. |
+| `reveal.slidenumber`              | Display the page number of the current slide. Possible values are `true` and `false`. Default value is `false`. |
+| `reveal.theme`                    | If you use a CSS template, the theme is namenameof the template is the filename without its extension. `sky`, `beige`, `simple`, `serif`, `night`, `moon`, `solarized` Default: `simple` |
+| `reveal.touch`                    | Enables touch navigation on devices with touch input. Possible values are `true` and `false`. Default value is `true`. |
+| `reveal.transition`               | Set the transition style. `default`, `none`, `fade`, `slide`, `convex`, `concave`, `zoom` Default: `default` |
+| `reveal.transitionspeed`          | Set the transition speed. `default`, `fast`, `slow` Default: `default` |
+| `reveal.version`                  | Set the reveal.js version. Default: latest |
+| `reveal.viewdistance`             | Set the number of slides away from the current that are visible. Default: `3` |
+| `reveal.width`                    | The 'normal' width of the presentation, aspect ratio will be preserved when the presentation is scaled to fit different resolutions. Can be specified using percentage units. Default: `960` |
 
 
 Implement Font Awesome
